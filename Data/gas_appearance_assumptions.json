@@ -1,0 +1,34 @@
+{
+  "status": "appearance hypothesis only; not measured nozzle positions or fluid dynamics",
+  "source_visible": "blue-white downward streams during upright descent; no flame",
+  "anchors_body_cm": [
+    [
+      -135,
+      -72,
+      18
+    ],
+    [
+      -135,
+      72,
+      18
+    ],
+    [
+      135,
+      -72,
+      18
+    ],
+    [
+      135,
+      72,
+      18
+    ]
+  ],
+  "anchor_count_status": "assumed four-corner layout, not recovered hardware",
+  "active_s": [
+    10.55,
+    13.3
+  ],
+  "time_status": "coarse visible interval approximation, not one-frame event certification",
+  "cache_policy": "deterministic saved transform keys, procedural WorldPosition noise; no Time expression or runtime particle history",
+  "landing_cloud": "omitted so it cannot conceal contact uncertainty or fitting errors"
+}

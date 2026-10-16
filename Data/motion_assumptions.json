@@ -1,0 +1,26 @@
+{
+  "status": "rough_visual_hypothesis_NOT_validated_replay",
+  "source": "https://x.com/Tesla/status/2110913438293647789",
+  "source_interval_frames": [
+    0,
+    418
+  ],
+  "time_basis": "original CFR video; exact PTS mapping research/ramp_source_frame_pts.json",
+  "frame_rate": [
+    24000,
+    1001
+  ],
+  "ramp_arc_length_cm": 3082.2697473780268,
+  "release_time_s": 9.75,
+  "release_time_status": "interpolation seed, not contact measurement; observed complete projection gap at frame241",
+  "roll_angle_deg": -180,
+  "roll_sign_status": "chosen for clockwise half-roll in front-facing camera; verify rendered projection before acceptance",
+  "landing_time_s": 13.25,
+  "landing_time_status": "occluded interpolation assumption; cannot certify first tire contact",
+  "world_units": "cm",
+  "gravity_not_simulated": true,
+  "authority": "one native LevelSequence transform track per object",
+  "quaternion_policy": "dense continuous unwrapped Euler pitch170->180 with roll0->-180; no shortest-path slerp and no additional revolution",
+  "suspension": "not reconstructed; wheel centers fixed relative to body",
+  "not_a_physics_validation": true
+}

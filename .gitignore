@@ -1,0 +1,42 @@
+# Unreal-generated files and local execution evidence
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Validation/
+Content/Developers/
+Content/Collections/
+*.sln
+*.suo
+.vs/
+
+# Local third-party tools, source footage, diagnostics and packages
+Tools/
+SourceMedia/
+research/
+Checkpoints/
+Packaging/
+P/
+Publication/
+*.exe
+*.dll
+*.zip
+*.log
+*.tmp
+*.blend1
+*.blend2
+__pycache__/
+*.pyc
+AssetsSource/Previews/
+
+# Rendered sequences remain local; only the authored release previews are shared
+Renders/*
+!Renders/Reference_Replay_4K.mp4
+!Renders/Reference_Replay_1080.mp4
+!Renders/Inspection_3D.mp4
+Data/trajectory_initial.csv
+Data/physics_timeseries_*.csv
+Data/physics_mass_sensitivity.csv
+Data/physics_linear_corners.csv
+Data/physics_summary.json
+Data/physics_baseline_*samples.csv

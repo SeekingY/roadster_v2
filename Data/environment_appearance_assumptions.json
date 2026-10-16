@@ -1,0 +1,240 @@
+{
+  "status": "appearance-only estimate; no metric recovery of stage equipment",
+  "source": "research/ramp_source_1080/frame_00000264.png",
+  "source_frame": 264,
+  "method": "inverse pinhole rays intersect assumed ground height; single-frame positions only",
+  "red_strip_source_pixels": [
+    [
+      238,
+      1010
+    ],
+    [
+      1004,
+      1010
+    ]
+  ],
+  "red_strip_assumed_world_cm": [
+    [
+      -3284.4909553072134,
+      -1604.0898076534806,
+      4.0
+    ],
+    [
+      -2085.558263043139,
+      -171.72758147494937,
+      4.0
+    ]
+  ],
+  "fixtures": [
+    {
+      "source_pixel": [
+        194,
+        984
+      ],
+      "assumed_world_cm": [
+        -1037.2276339487871,
+        -7492.993944041665,
+        8.0
+      ],
+      "assumed_diameter_cm": 30.15120500096785
+    },
+    {
+      "source_pixel": [
+        215,
+        982
+      ],
+      "assumed_world_cm": [
+        -371.088600519186,
+        -8800.374653022602,
+        8.0
+      ],
+      "assumed_diameter_cm": 34.46604792731709
+    },
+    {
+      "source_pixel": [
+        240,
+        978
+      ],
+      "assumed_world_cm": [
+        1708.2765886195475,
+        -13239.206120684745,
+        8.0
+      ],
+      "assumed_diameter_cm": 48.921376283095604
+    },
+    {
+      "source_pixel": [
+        266,
+        973
+      ],
+      "assumed_world_cm": [
+        9683.994090679582,
+        -30517.332387802933,
+        8.0
+      ],
+      "assumed_diameter_cm": 60
+    },
+    {
+      "source_pixel": [
+        364,
+        975
+      ],
+      "assumed_world_cm": [
+        6039.500881268725,
+        -19034.939088933777,
+        8.0
+      ],
+      "assumed_diameter_cm": 60
+    },
+    {
+      "source_pixel": [
+        387,
+        981
+      ],
+      "assumed_world_cm": [
+        857.1161709586704,
+        -8641.337706701233,
+        8.0
+      ],
+      "assumed_diameter_cm": 35.59350938295961
+    },
+    {
+      "source_pixel": [
+        410,
+        986
+      ],
+      "assumed_world_cm": [
+        -700.3266511116753,
+        -5473.844490221602,
+        8.0
+      ],
+      "assumed_diameter_cm": 25.18574146921789
+    },
+    {
+      "source_pixel": [
+        433,
+        989
+      ],
+      "assumed_world_cm": [
+        -1238.2748291764142,
+        -4289.115113008722,
+        8.0
+      ],
+      "assumed_diameter_cm": 21.360366485574133
+    },
+    {
+      "source_pixel": [
+        863,
+        986
+      ],
+      "assumed_world_cm": [
+        922.3201990860953,
+        -3535.2719000774578,
+        8.0
+      ],
+      "assumed_diameter_cm": 23.554542523417062
+    },
+    {
+      "source_pixel": [
+        878,
+        986
+      ],
+      "assumed_world_cm": [
+        976.0502272383392,
+        -3471.080754708446,
+        8.0
+      ],
+      "assumed_diameter_cm": 23.539076640169235
+    },
+    {
+      "source_pixel": [
+        893,
+        987
+      ],
+      "assumed_world_cm": [
+        710.3053400537674,
+        -3112.820075179361,
+        8.0
+      ],
+      "assumed_diameter_cm": 22.24480631841498
+    },
+    {
+      "source_pixel": [
+        987,
+        1000
+      ],
+      "assumed_world_cm": [
+        -1398.594528398045,
+        -778.079546668336,
+        8.0
+      ],
+      "assumed_diameter_cm": 13.028486047032555
+    },
+    {
+      "source_pixel": [
+        1033,
+        1002
+      ],
+      "assumed_world_cm": [
+        -1518.1768768538082,
+        -510.6338595997788,
+        8.0
+      ],
+      "assumed_diameter_cm": 12.265008341353164
+    },
+    {
+      "source_pixel": [
+        1076,
+        1004
+      ],
+      "assumed_world_cm": [
+        -1629.47012894019,
+        -279.7918792473472,
+        8.0
+      ],
+      "assumed_diameter_cm": 11.597966489550865
+    },
+    {
+      "source_pixel": [
+        1128,
+        1003
+      ],
+      "assumed_world_cm": [
+        -1442.6926833253974,
+        -233.2464327158798,
+        8.0
+      ],
+      "assumed_diameter_cm": 11.976115024142866
+    },
+    {
+      "source_pixel": [
+        1180,
+        1001
+      ],
+      "assumed_world_cm": [
+        -1134.1702254527181,
+        -250.663760577351,
+        8.0
+      ],
+      "assumed_diameter_cm": 12.77381003898456
+    },
+    {
+      "source_pixel": [
+        1230,
+        1000
+      ],
+      "assumed_world_cm": [
+        -917.6149069506519,
+        -203.45426055498388,
+        8.0
+      ],
+      "assumed_diameter_cm": 13.255915299963165
+    }
+  ],
+  "limits": [
+    "depth and scale depend on unverified camera height",
+    "lamp intensities, sizes and housing shapes are approximations",
+    "no independent reprojection validation",
+    "ambient illumination and concrete material not photometrically calibrated"
+  ]
+}

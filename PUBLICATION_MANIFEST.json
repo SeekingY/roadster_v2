@@ -1,0 +1,877 @@
+{
+  "schema_version": 1,
+  "status": "public_subset_prepared_and_locally_validated; publication is a separate action",
+  "scope": "Portable editable reconstruction draft, authored model sources, parameter data and three Unreal-only previews. No official media or raw local evidence.",
+  "source_build_manifest_sha256": "f404e1e457b1ffa899d241a53677b7a7cf7e3b9fb54845a506615178bb710c49",
+  "source_build_relationship": "Derived from the frozen local build. Public metadata/privacy/path edits are recorded by per-file hashes. The public copy has not been image-rerendered; original image-fidelity measurements remain limited to that local evaluated build.",
+  "entrypoint": "Roadster_Demo_Reconstruction.uproject",
+  "dependencies": {
+    "platform": "Windows",
+    "unreal_engine": "5.4.3 (UE_ROOT override, otherwise standard Epic UE_5.4 directory)",
+    "blender": "4.2 only for procedural source regeneration (BLENDER_EXE override)",
+    "python": "Unreal bundled Python for authoring/validation; not a native replay runtime dependency",
+    "ffmpeg": "Separately installed FFmpeg with libx264 for optional encoding; FFMPEG_EXE or PATH. Not bundled.",
+    "runtime_assets": "No official video planes or external textures are required by native replay."
+  },
+  "public_copy_changes": [
+    "Removed AndroidFileServer runtime settings/token section and machine-specific shader worker counts from copied Config only.",
+    "Normalized private absolute paths in copied JSON to project-relative paths; numerical trajectory/ramp bytes and clearance input guards preserved.",
+    "Seven MRQ preset output directories use {project_dir}/Renders; six static meshes have import-source metadata cleared through Unreal APIs.",
+    "Two Blender files resaved with relative custom/File Browser paths; evaluated geometry signatures unchanged.",
+    "Ramp FBX re-exported through Blender with matching original export options and no private native-file metadata; actual reimport geometry/material/UV/transform signature unchanged.",
+    "Run entrypoints use configurable dependencies, create local output directories and accept the publication manifest as the initial render freshness baseline.",
+    "Encoder handles only authored outputs and requires complete fresh 419-frame sequences; source/comparison video workflow removed.",
+    "Authoring scripts generate portable metadata/output paths and disable optional FBX metadata; clearance safety checks retained.",
+    "Git attributes preserve exact input bytes; ignored local execution evidence, caches, dependencies, source media and packages are excluded."
+  ],
+  "excluded_categories": [
+    "official SourceMedia",
+    "research and source-frame/reference-mask images",
+    "source/comparison video",
+    "original pasted brief",
+    "hardware/environment reports",
+    "private local logs and runtime captures",
+    "third-party executables/libraries",
+    "engine caches and generated build directories",
+    "checkpoints",
+    "standalone executable packages",
+    "historical candidates/backups"
+  ],
+  "release_preparation_only_scripts": [
+    "Scripts/sanitize_public_blender.py",
+    "Scripts/sanitize_public_unreal.py"
+  ],
+  "not_included_workflows": "Source-video acquisition, reference masking, numerical camera/attitude fitting and image-metric recomputation require excluded research evidence/dependencies. Included parameters allow playback and native regeneration without that evidence.",
+  "local_public_copy_checks": {
+    "python_script_syntax_passed": true,
+    "powershell_entrypoint_syntax_passed": true,
+    "clearance_guard_inputs_and_nominal_parameters_match": true,
+    "generator_reproduces_exact_windows_ramp_bytes": true,
+    "fresh_native_reopen_samples": {
+      "display_rate": [
+        24000,
+        1001
+      ],
+      "playback_start": 0,
+      "playback_end": 419,
+      "samples": [
+        {
+          "frame": 144,
+          "actual_xyz_cm": [
+            578.5675659179688,
+            0.0,
+            917.032470703125
+          ],
+          "csv_error_cm": 2.9784175814763665e-05
+        },
+        {
+          "frame": 240,
+          "actual_xyz_cm": [
+            -1166.6055908203125,
+            0.0,
+            1906.358154296875
+          ],
+          "csv_error_cm": 2.2221932406280477e-05
+        }
+      ],
+      "passed": true
+    },
+    "fresh_Run_Validate_replay_passed": true,
+    "fresh_Run_Validate_render_stage_passed": true,
+    "validation_saved_assets": false,
+    "blend_evaluated_geometry_unchanged": true,
+    "ramp_fbx_reimport_semantics_unchanged": true,
+    "binary_assets_scanned": 53,
+    "private_binary_path_hits": 0,
+    "warning_scope": "Nonfatal local editor SSL/settings-access warnings occurred; success does not mean warning-free logs or validation on every machine."
+  },
+  "image_validation_limits": {
+    "silhouette_samples": 6,
+    "mean_IoU": 0.693438614996,
+    "samples_at_or_above_0_90": 0,
+    "clear_center_samples": 21,
+    "mean_center_error_percent_diagonal": 0.2176994878,
+    "not_blind": true,
+    "high_fidelity_acceptance_passed": false
+  },
+  "file_manifest_scope": "Explicit publish allowlist below. Excludes this manifest itself and .git; generated ignored files on disk are not release contents.",
+  "file_count_excluding_this_manifest": 112,
+  "total_bytes_excluding_this_manifest": 29383161,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 171,
+      "sha256": "d2a2b951b56d348c7f36f653d789b20b80ec66deaf2f84de4b18230201be4727",
+      "copy_status": "publication_support_file"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 774,
+      "sha256": "e930538578ba4df1dc731227be7f42ffb7db4a30c0dd1703805de0f3d7c5c970",
+      "copy_status": "publication_support_file"
+    },
+    {
+      "path": "AssetsSource/FBX/SM_Ramp_Ribbon.fbx",
+      "bytes": 127884,
+      "sha256": "d21a43619bf3e34c7466d37ce882a498bf92a584ba2fcd8cba67e54d37f7c9e0",
+      "local_source_sha256": "746c660e539e60ac347c6804e38427e1f2a19703c49d88581fef3fed3788228d",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "AssetsSource/FBX/SM_Roadster_Blockout_Body.fbx",
+      "bytes": 562140,
+      "sha256": "aff763f093f5cf295298ccef5869e9639543b2cd7a37ef6c0edc9ea9ed42fde4",
+      "local_source_sha256": "aff763f093f5cf295298ccef5869e9639543b2cd7a37ef6c0edc9ea9ed42fde4",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "AssetsSource/FBX/SM_Roadster_Wheel_FL.fbx",
+      "bytes": 126012,
+      "sha256": "ce5697e4a1e6dd96d4917eb673ebb6dd954cf4331339d25a13888c5c0597e7b2",
+      "local_source_sha256": "ce5697e4a1e6dd96d4917eb673ebb6dd954cf4331339d25a13888c5c0597e7b2",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "AssetsSource/FBX/SM_Roadster_Wheel_FR.fbx",
+      "bytes": 125068,
+      "sha256": "10d650a1ced9af1723360a4e7013cbc5e79dbe33bab31b498f268f7ae72478e4",
+      "local_source_sha256": "10d650a1ced9af1723360a4e7013cbc5e79dbe33bab31b498f268f7ae72478e4",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "AssetsSource/FBX/SM_Roadster_Wheel_RL.fbx",
+      "bytes": 124716,
+      "sha256": "da6f14385420ea53faecb1de91709cfa71a15b3599e7697e392a5f68a29c2e7f",
+      "local_source_sha256": "da6f14385420ea53faecb1de91709cfa71a15b3599e7697e392a5f68a29c2e7f",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "AssetsSource/FBX/SM_Roadster_Wheel_RR.fbx",
+      "bytes": 126124,
+      "sha256": "901b932d370657da601e62a0bdb6a932b9bc74224896628271583562e1ac7792",
+      "local_source_sha256": "901b932d370657da601e62a0bdb6a932b9bc74224896628271583562e1ac7792",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "AssetsSource/Ramp_Editable.blend",
+      "bytes": 1072236,
+      "sha256": "6fda769b6d50b4481d8f47953f8f7c3e74d26c7f24b60fbc65100f775f37e3e0",
+      "local_source_sha256": "cc152e97b4493c61647d485b2cb37a12cd87e92ae4c2e343f8ca725c9b5c2005",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "AssetsSource/Roadster_Exterior_Blockout.blend",
+      "bytes": 2536092,
+      "sha256": "c531ea7006dbc1578b71446da629db420b9a7563737899bea26815c8c106fd1d",
+      "local_source_sha256": "a39d60b0180b2ed13f2c993c7ceec09b44eb84a881b17e01086a2cae217a1256",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "AssetsSource/vehicle_manifest.json",
+      "bytes": 14705,
+      "sha256": "44d739d976dfc062994ea87bb16fa82ac8af472dfde3dcc39d1fdcb08b0b02e7",
+      "local_source_sha256": "032b2872bd41dd8ed7b12c20a7e00255fdcf01542e30f8aa20d9cef9222460bd",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "AssetsSource/vehicle_parameters.json",
+      "bytes": 596,
+      "sha256": "3d94498fc07093ab32388808cd89bd2d82cfe07fa0538d306ff1a8b698632b3a",
+      "local_source_sha256": "3d94498fc07093ab32388808cd89bd2d82cfe07fa0538d306ff1a8b698632b3a",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Config/DefaultEngine.ini",
+      "bytes": 1256,
+      "sha256": "6b379733062303ed25dc8e83270d2cee1da291abcbcbaaf486f2046abce69b10",
+      "local_source_sha256": "dcc12d2a40512cd3e581b1812677da16848d75570d1a04f75daceda2b9fc1972",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Config/DefaultGame.ini",
+      "bytes": 283,
+      "sha256": "ec005b36231f442c68734270fe1d70163a4e84b836d4ae25cb791585fcc8fce4",
+      "local_source_sha256": "9b0fc65cba9a6780ba44cbfee8da19594574c46cdd16166ba0c2ccd21c384c03",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Config/DefaultInput.ini",
+      "bytes": 9387,
+      "sha256": "4c6a6cb8d2eed691dded89e4ab3eb81f4d7de614083af9dec8aad33f924c59e7",
+      "local_source_sha256": "4c6a6cb8d2eed691dded89e4ab3eb81f4d7de614083af9dec8aad33f924c59e7",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Maps/Physics_GravityOnly_Baseline.umap",
+      "bytes": 12779,
+      "sha256": "4658eaad9739999542ab53110b84d99445132623999699f7b15cf118ef432ff1",
+      "local_source_sha256": "4658eaad9739999542ab53110b84d99445132623999699f7b15cf118ef432ff1",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Maps/Ramp_Reconstruction_Draft.umap",
+      "bytes": 169671,
+      "sha256": "f038ef5720060b7c59346978a9b01a10391f094e54f999b99c0aca748e3a42a6",
+      "local_source_sha256": "f038ef5720060b7c59346978a9b01a10391f094e54f999b99c0aca748e3a42a6",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Maps/Ramp_Render_Stage.umap",
+      "bytes": 199252,
+      "sha256": "9f52d272b5f0c59753f40744102795942d6bfd9a096f21724dad7e01abe41024",
+      "local_source_sha256": "9f52d272b5f0c59753f40744102795942d6bfd9a096f21724dad7e01abe41024",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_Axis_X.uasset",
+      "bytes": 5148,
+      "sha256": "b41350ef3e45412e28bb3fdc3c6731f3980e6a3460ae15400b128faff510abb8",
+      "local_source_sha256": "b41350ef3e45412e28bb3fdc3c6731f3980e6a3460ae15400b128faff510abb8",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_Axis_Y.uasset",
+      "bytes": 5148,
+      "sha256": "1a685bd22cbfda32c7546ba6df7fe939415aeb838096596b52a3e59c9776c3d4",
+      "local_source_sha256": "1a685bd22cbfda32c7546ba6df7fe939415aeb838096596b52a3e59c9776c3d4",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_Axis_Z.uasset",
+      "bytes": 5148,
+      "sha256": "69ed4a4e206b2061349d6e92b2b2b5a0d9d409318360eeabb694a46f15d77b94",
+      "local_source_sha256": "69ed4a4e206b2061349d6e92b2b2b5a0d9d409318360eeabb694a46f15d77b94",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_BlackGlass.uasset",
+      "bytes": 5197,
+      "sha256": "7dbde13ec54cb874132fb1b5669017aeacd6293da0c5f0aeb5a1d0efe97285ed",
+      "local_source_sha256": "7dbde13ec54cb874132fb1b5669017aeacd6293da0c5f0aeb5a1d0efe97285ed",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_BodySilver.uasset",
+      "bytes": 5197,
+      "sha256": "907b969cc40674aa0538c03159b8e309904ba8ec0468d27e2510f7ded2745b27",
+      "local_source_sha256": "907b969cc40674aa0538c03159b8e309904ba8ec0468d27e2510f7ded2745b27",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_BodySilverV2.uasset",
+      "bytes": 5207,
+      "sha256": "00485613cdf8083e5860be35bb0440c2fccbbb0c272f532086838bfe07eb2e8b",
+      "local_source_sha256": "00485613cdf8083e5860be35bb0440c2fccbbb0c272f532086838bfe07eb2e8b",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_CalibrationFloor.uasset",
+      "bytes": 5198,
+      "sha256": "bc70be39b7bf7472182e8d5e28e7032a5e14e04ddeb0ec15da2a61d532e58aaa",
+      "local_source_sha256": "bc70be39b7bf7472182e8d5e28e7032a5e14e04ddeb0ec15da2a61d532e58aaa",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_CalibrationGrid.uasset",
+      "bytes": 5193,
+      "sha256": "39ebded7815c1865924b1c90ccdb323d5dfd7e40ac27ab42665ab475ad1ff7ea",
+      "local_source_sha256": "39ebded7815c1865924b1c90ccdb323d5dfd7e40ac27ab42665ab475ad1ff7ea",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_CalibrationMarker.uasset",
+      "bytes": 5232,
+      "sha256": "e49a6ee36fbdab1e7f3119c483296080bdae1019b00e4fe770a9932958a0c4a8",
+      "local_source_sha256": "e49a6ee36fbdab1e7f3119c483296080bdae1019b00e4fe770a9932958a0c4a8",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_DarkTrim.uasset",
+      "bytes": 5187,
+      "sha256": "5549c5a669c5ff21299524b92b8cede90737d05104c37ab05e38c1de943cf446",
+      "local_source_sha256": "5549c5a669c5ff21299524b92b8cede90737d05104c37ab05e38c1de943cf446",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_FixtureHousing.uasset",
+      "bytes": 5188,
+      "sha256": "a814e71c813a18c75ebb96c9efdd9d5b9f922cebecc508525c49f89d738e7157",
+      "local_source_sha256": "a814e71c813a18c75ebb96c9efdd9d5b9f922cebecc508525c49f89d738e7157",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_Headlight.uasset",
+      "bytes": 5607,
+      "sha256": "ace8722b697f5353e177be4daadb989793871329c426d9f4bb5bbcfbd2bac809",
+      "local_source_sha256": "ace8722b697f5353e177be4daadb989793871329c426d9f4bb5bbcfbd2bac809",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_LaneStripe.uasset",
+      "bytes": 5168,
+      "sha256": "cdc7c6aef3aed5359e34c4b502865abaa434a442801c8a87da3c0942c55b4b66",
+      "local_source_sha256": "cdc7c6aef3aed5359e34c4b502865abaa434a442801c8a87da3c0942c55b4b66",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_NightConcrete.uasset",
+      "bytes": 5212,
+      "sha256": "28a5369eb8d97b0219840db3323debfc4abac5e00138cdb600c116aac687dae5",
+      "local_source_sha256": "28a5369eb8d97b0219840db3323debfc4abac5e00138cdb600c116aac687dae5",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_NightConcreteV2.uasset",
+      "bytes": 5193,
+      "sha256": "384e7463868b866fe9f38f166036174dccd85df2bb9a1696a5f9673a7c1ebc8b",
+      "local_source_sha256": "384e7463868b866fe9f38f166036174dccd85df2bb9a1696a5f9673a7c1ebc8b",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_NightConcreteV3.uasset",
+      "bytes": 5193,
+      "sha256": "6479e94011f2b3f39a200805214675f4c0585d83a775bef947c4a885d2a1e941",
+      "local_source_sha256": "6479e94011f2b3f39a200805214675f4c0585d83a775bef947c4a885d2a1e941",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_ObservedFixtureWhite.uasset",
+      "bytes": 5633,
+      "sha256": "1a9b1c1cf813158d5c36265be52fb1cb84afd7bb4a6d8875c04c12e85750f0a4",
+      "local_source_sha256": "1a9b1c1cf813158d5c36265be52fb1cb84afd7bb4a6d8875c04c12e85750f0a4",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_ObservedGroundRed.uasset",
+      "bytes": 5618,
+      "sha256": "741dddfde5ab677e3a3e1f38033c8b4bf07c0c9ed39d7530170992cff53ecf5a",
+      "local_source_sha256": "741dddfde5ab677e3a3e1f38033c8b4bf07c0c9ed39d7530170992cff53ecf5a",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_ObservedGroundRedV2.uasset",
+      "bytes": 5628,
+      "sha256": "a46239941a8aeff0dccbd47be43486c9c74a3c78dd6b4fb2770710dfbf095bc8",
+      "local_source_sha256": "a46239941a8aeff0dccbd47be43486c9c74a3c78dd6b4fb2770710dfbf095bc8",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_RampEdge.uasset",
+      "bytes": 5228,
+      "sha256": "fe85bac154ef44c020387643f06d84cd7f03ada355716d01d8b56c03942889cd",
+      "local_source_sha256": "fe85bac154ef44c020387643f06d84cd7f03ada355716d01d8b56c03942889cd",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_RampSurface.uasset",
+      "bytes": 7224,
+      "sha256": "c534d20381e1f0ad32cd2561936715e04ec2a3d410262cc19e2bef96cdbace61",
+      "local_source_sha256": "c534d20381e1f0ad32cd2561936715e04ec2a3d410262cc19e2bef96cdbace61",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_RedTail.uasset",
+      "bytes": 5223,
+      "sha256": "f9b8e24ddce8f1a6881f38f218ca8300b2ab80fe088aa63f4af7bb134681b08c",
+      "local_source_sha256": "f9b8e24ddce8f1a6881f38f218ca8300b2ab80fe088aa63f4af7bb134681b08c",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_Rim.uasset",
+      "bytes": 5162,
+      "sha256": "5f1d2f0ddd73a8b073e30499e9d4e368b0bdcfdce7be3b445a54ef478b58ad11",
+      "local_source_sha256": "5f1d2f0ddd73a8b073e30499e9d4e368b0bdcfdce7be3b445a54ef478b58ad11",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_Tire.uasset",
+      "bytes": 5138,
+      "sha256": "9ee8794c3ff4f01902f07c7b6cf59d7f4c93305a18dc3e96b2bc5db684ebb713",
+      "local_source_sha256": "9ee8794c3ff4f01902f07c7b6cf59d7f4c93305a18dc3e96b2bc5db684ebb713",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_TrussSteel.uasset",
+      "bytes": 5197,
+      "sha256": "ca2a210ed880060ef1cb4b93281f77c9289020dd73ff3f3f1f6a4d9114216652",
+      "local_source_sha256": "ca2a210ed880060ef1cb4b93281f77c9289020dd73ff3f3f1f6a4d9114216652",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Materials/M_VisibleGas_Approximation.uasset",
+      "bytes": 7724,
+      "sha256": "b5c644754364c75b82d2f434af15dd3aa6ff4ba1dfcab2fc12ebc647df5cf6b4",
+      "local_source_sha256": "b5c644754364c75b82d2f434af15dd3aa6ff4ba1dfcab2fc12ebc647df5cf6b4",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Render/Masks/CarMask.uasset",
+      "bytes": 14485,
+      "sha256": "ebc991497ee55a1b00b570d09e07dd6b4d16ac0e7038fa40a84273cfa49229c1",
+      "local_source_sha256": "ebc991497ee55a1b00b570d09e07dd6b4d16ac0e7038fa40a84273cfa49229c1",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Render/Ramp_Draft_720.uasset",
+      "bytes": 3854,
+      "sha256": "4514d1d8183d2b77ef5f643788761ae326ac681accdef5f0194ff30e51180917",
+      "local_source_sha256": "6e58fc9a4551d2e0d9ace2cd66d1dfb36f9bb94073c3b701283dd8a94b36a272",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Content/Render/Ramp_Final_1080.uasset",
+      "bytes": 3762,
+      "sha256": "828a7014ea8e4c4a7caa89de228cd06a14f7d313c0e4c12a69b00d6991b23b4a",
+      "local_source_sha256": "27c67e3e2b59f791e15bbfe29f4ec389bf29c4ec243846ab94328560fa8a6e81",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Content/Render/Ramp_Final_4K.uasset",
+      "bytes": 3970,
+      "sha256": "3c7bd8e5d626e53fc54efeee5a4e19a82e0783a65686cabeb72d528bbd648565",
+      "local_source_sha256": "05dec0db00ba1be52dac5ef737388938e9feab7beaa366ac1207688fd791572e",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Content/Render/Ramp_Inspection_720.uasset",
+      "bytes": 3879,
+      "sha256": "75008a66da710a4a9c6bd6ef6b5aa0411096d093f58f5ae84c5988657630c6ae",
+      "local_source_sha256": "1c38b45d67da100a17fd402189838e679d3dcb643a60647b8ca8e7f46420f3c1",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Content/Render/Ramp_Smoke.uasset",
+      "bytes": 4005,
+      "sha256": "e1be20a926e43c469f5c25a0fc1b4f7736f8314e7565f8910ececdc411a96aca",
+      "local_source_sha256": "d722c9e1fe972d811885c9fd30dfc6d62407a7f848c53574814ac43887e84f2e",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Content/Render/Ramp_Smoke_CarMask.uasset",
+      "bytes": 3985,
+      "sha256": "8dd93f1ff290dd0a025b84c24e57fbd4f5241d03ea781693a023fc926838fb04",
+      "local_source_sha256": "90e7e1fe2a6c0e99209dbc93504e7d7f1371c18f1537bd4e7554996a3363129b",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Content/Render/Ramp_Validation_CarMask.uasset",
+      "bytes": 4349,
+      "sha256": "9f41e109e92c9d58fd74d7c5e64d4bf0587745f85b0f4f397c9c95ae797186e5",
+      "local_source_sha256": "cccc1aeaa7053a3b1f217ac0763cef2ca7041cf0b01de93f835c4fd332ab4d00",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Content/Sequences/SEQ_Ramp_Draft.uasset",
+      "bytes": 6460577,
+      "sha256": "193b17ea6426e6ec2a23edf6eb3a3a7e961221ab1190f1995e9ff0364761a91c",
+      "local_source_sha256": "193b17ea6426e6ec2a23edf6eb3a3a7e961221ab1190f1995e9ff0364761a91c",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Sequences/SEQ_Ramp_Inspection.uasset",
+      "bytes": 6397416,
+      "sha256": "256c8d29c31ee0613c997ff59682b2fc068aaf02d41168780e78a4aec68e4f4d",
+      "local_source_sha256": "256c8d29c31ee0613c997ff59682b2fc068aaf02d41168780e78a4aec68e4f4d",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Content/Vehicle/SM_Ramp_Ribbon.uasset",
+      "bytes": 101592,
+      "sha256": "4c726e58e04dceaf0b5ef6c5ee55a1b99c382a90a95797ae5efe087f2d43896e",
+      "local_source_sha256": "6eaffe16f82c1f66967da54610f40504dce78b9c333a5f1e92e51ba00f4ff610",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Content/Vehicle/SM_Roadster_Blockout_Body.uasset",
+      "bytes": 367023,
+      "sha256": "ae7d30ebcb31512c31055717ca0f1f26b1451b0c2a0d7feccae56a6b9834e088",
+      "local_source_sha256": "83708eb3c367dcb2587c0e1839c8bfe6356cee77e3eb067147ca3a1b1ff22252",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Content/Vehicle/SM_Roadster_Wheel_FL.uasset",
+      "bytes": 82975,
+      "sha256": "55fcfd5e7b1b1d37af69284d147a6dbeb89fc50ccfcaeb604293d3eb91d90675",
+      "local_source_sha256": "8b56bfe0a10af63da3980867437a6e0a3c96b56884d09792f9f449ba42718a27",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Content/Vehicle/SM_Roadster_Wheel_FR.uasset",
+      "bytes": 82598,
+      "sha256": "3e2fe6c66e8d50b3d52fe0d4f392eb93493d8a2e8235dab515b0e9d203489b0a",
+      "local_source_sha256": "1ddbd1961f304c3dfbe68462ab392b783aa4d2354f3de6dfdb9c20dbe812c606",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Content/Vehicle/SM_Roadster_Wheel_RL.uasset",
+      "bytes": 82359,
+      "sha256": "d2578fede2fdb1ad75b0188c6df876394f403e249aaacfcf1f9c97e3031eab37",
+      "local_source_sha256": "a0bcfcaecfd44d93055ffb44e90ae1817274ff761173f3b41928190c8e45b731",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Content/Vehicle/SM_Roadster_Wheel_RR.uasset",
+      "bytes": 82199,
+      "sha256": "d81d3b45da0752039ed60d442ba8bf00fb03c62f3073115672f809d0fe9fac92",
+      "local_source_sha256": "5c7208d6f95754db718fbac9f8d7793827b2793e6957fb1172bd9eff52dfc193",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Data/camera_close_fit.json",
+      "bytes": 10303,
+      "sha256": "73c59da922df06ca69aee2b00eae8f4b73cada99810260908ac62ce1e3b3297c",
+      "local_source_sha256": "73c59da922df06ca69aee2b00eae8f4b73cada99810260908ac62ce1e3b3297c",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Data/camera_fit_keys.json",
+      "bytes": 56278,
+      "sha256": "0d8b243dd83581a6dfcc39504eccbe4c5c2079520d53bc6191e2095bcef71362",
+      "local_source_sha256": "0d8b243dd83581a6dfcc39504eccbe4c5c2079520d53bc6191e2095bcef71362",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Data/environment_appearance_assumptions.json",
+      "bytes": 4870,
+      "sha256": "970726626d0370076276c63847e201192a5b97b57072979ff5772c5bde76b114",
+      "local_source_sha256": "970726626d0370076276c63847e201192a5b97b57072979ff5772c5bde76b114",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Data/event_timeline.csv",
+      "bytes": 2513,
+      "sha256": "c3e4d68a942b8d41fe73637380a567875b1a175d1b6b8ab72de50b94694f217f",
+      "local_source_sha256": "c3e4d68a942b8d41fe73637380a567875b1a175d1b6b8ab72de50b94694f217f",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Data/flight_attitude_fit.json",
+      "bytes": 11412,
+      "sha256": "977c185381c929edec756e208044e44fcaeff0bc80034cc7ae09ade36ef55eb3",
+      "local_source_sha256": "d7850441451ba8c7516078d15e20c66c768a9b443e37be40d0562d0c0d4e6c4c",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Data/gas_appearance_assumptions.json",
+      "bytes": 851,
+      "sha256": "4b1e8834ccbc249ac108d83edf11f76e376412a37c5b187c5de894a60b5f1e3a",
+      "local_source_sha256": "4b1e8834ccbc249ac108d83edf11f76e376412a37c5b187c5de894a60b5f1e3a",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Data/mask_pass_settings.json",
+      "bytes": 111,
+      "sha256": "e15a44daf723596ab47c3b483f78e2d73b2c52e83a84b5ef475f414f450a1912",
+      "local_source_sha256": "e15a44daf723596ab47c3b483f78e2d73b2c52e83a84b5ef475f414f450a1912",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Data/motion_assumptions.json",
+      "bytes": 1178,
+      "sha256": "cea660e973171435012cdc895bf8e0401f720d2f4894df4d67c231d7625a8efe",
+      "local_source_sha256": "cea660e973171435012cdc895bf8e0401f720d2f4894df4d67c231d7625a8efe",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Data/physics_baseline_spec.json",
+      "bytes": 1592,
+      "sha256": "2ad9ad55f6a5aa971fd1058684baf9afac7b0cd200f44d08326fa377ca5b368c",
+      "local_source_sha256": "2ad9ad55f6a5aa971fd1058684baf9afac7b0cd200f44d08326fa377ca5b368c",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Data/pose_constraints.json",
+      "bytes": 2261,
+      "sha256": "18e3b71288cae689fbf10520ee1b575bb7c3c125575350414e7a2f1e63c3bf34",
+      "local_source_sha256": "3f0d3088e7a3d2af9df4a7755b09260659696ce4cc94aca24cd0cefb316a691c",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Data/ramp_dense.json",
+      "bytes": 56444,
+      "sha256": "3aa0f3bdd79eabf6499b3eb8585fd1298864bdc6f1928f2a56590642849528a3",
+      "local_source_sha256": "3aa0f3bdd79eabf6499b3eb8585fd1298864bdc6f1928f2a56590642849528a3",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Data/ramp_parameters.json",
+      "bytes": 4882,
+      "sha256": "da22c2d324e3127ab592db7020c66eb500cb8815fab9f0a1201a070a2d92e17c",
+      "local_source_sha256": "da22c2d324e3127ab592db7020c66eb500cb8815fab9f0a1201a070a2d92e17c",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Data/shot_list.csv",
+      "bytes": 1260,
+      "sha256": "75925f248a9f592dbc3ef551b2db3c4c8d47a97883822fda2f6cdd61acd1b508",
+      "local_source_sha256": "75925f248a9f592dbc3ef551b2db3c4c8d47a97883822fda2f6cdd61acd1b508",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Data/trajectory_fit.csv",
+      "bytes": 115116,
+      "sha256": "3a4cbb820791c024798b0759d24deef682fd256aefaeb5a5e78aa032127ef246",
+      "local_source_sha256": "3a4cbb820791c024798b0759d24deef682fd256aefaeb5a5e78aa032127ef246",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Data/vehicle_clearance_adjustment.json",
+      "bytes": 89785,
+      "sha256": "d7be6b3bfc0f86c1f9e8048503754f1e53f70875530900f54a5db9c9e9acef8f",
+      "local_source_sha256": "d7be6b3bfc0f86c1f9e8048503754f1e53f70875530900f54a5db9c9e9acef8f",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Open_Project.cmd",
+      "bytes": 102,
+      "sha256": "764b5959bb019baf66dc06804bdbc96852a42525ee576915b581bb431012dd28",
+      "local_source_sha256": "764b5959bb019baf66dc06804bdbc96852a42525ee576915b581bb431012dd28",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Play_Reference.cmd",
+      "bytes": 102,
+      "sha256": "b880da9d5131d5ddf2d48db42eb2b65eb7346740a31df968bf0bd74953a6e4d0",
+      "local_source_sha256": "b880da9d5131d5ddf2d48db42eb2b65eb7346740a31df968bf0bd74953a6e4d0",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4762,
+      "sha256": "f2608e02ad761d0e6304c4ecc5a58dc5dc0e4262584ffe3020dbda311d0e100b",
+      "copy_status": "publication_support_file"
+    },
+    {
+      "path": "Rebuild_From_Data.cmd",
+      "bytes": 106,
+      "sha256": "3934dbb6d83fe061b4f123193ed952df6d337eaaff782e838bdd316a0daa775f",
+      "local_source_sha256": "3934dbb6d83fe061b4f123193ed952df6d337eaaff782e838bdd316a0daa775f",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Render_Reference.cmd",
+      "bytes": 265,
+      "sha256": "948950e0a0d2f7bf916d4ae4a27068f2ea0ae49fdd5e2a0803ad5f774194aae4",
+      "local_source_sha256": "f87fd199c390a4018986957fc05f35f2cbef58bf3625e4c137e240eb4a4da9d1",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Render_Reference_4K.cmd",
+      "bytes": 265,
+      "sha256": "e8f0a36d3c147ced363bce6996a680deb8953bb25df047438554e5a10405568f",
+      "local_source_sha256": "5601a98f3bd2af58d143eebd00faa3a29170dd0b1c1638096c5cfe684229782c",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Renders/Inspection_3D.mp4",
+      "bytes": 1872542,
+      "sha256": "9278c01db8adc2d42946a3cbf9c8bca4f5d66c6bd4bea44b212e625bb384bae5",
+      "local_source_sha256": "9278c01db8adc2d42946a3cbf9c8bca4f5d66c6bd4bea44b212e625bb384bae5",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Renders/Reference_Replay_1080.mp4",
+      "bytes": 1822201,
+      "sha256": "09d8e70a1b579db1cfc797bfe1858c12b3158fa40891b0fa66f35b24ccec0271",
+      "local_source_sha256": "09d8e70a1b579db1cfc797bfe1858c12b3158fa40891b0fa66f35b24ccec0271",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Renders/Reference_Replay_4K.mp4",
+      "bytes": 6090560,
+      "sha256": "209b04e345d9c2824e0943a362aa9439e7804b81fc12d7c2ad2fb8e3da102af8",
+      "local_source_sha256": "209b04e345d9c2824e0943a362aa9439e7804b81fc12d7c2ad2fb8e3da102af8",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Roadster_Demo_Reconstruction.uproject",
+      "bytes": 623,
+      "sha256": "21812d1bca4599aab838bdeef1d9e7493d1f5bac4971e136dc6310cf3e7c65ac",
+      "local_source_sha256": "95cf92e5f594ce2b84f695748864e383e68ece4c6c9898d429f3eae6014c0d76",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Scripts/Run.ps1",
+      "bytes": 5930,
+      "sha256": "cfc90721848c79e28e2d54aee41dfb55b21b319aa3ea16a1ba6744fa14555d64",
+      "local_source_sha256": "c9e0b4e3690bef56523ac4be3ff97b03a44dff77f5c77e2ee090a536c71972e7",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Scripts/author_appearance.py",
+      "bytes": 5400,
+      "sha256": "f9d4e04143e49e6a721d1c90d1f0a6964b40ba8cb4da4685e0414f4d887cc280",
+      "local_source_sha256": "f9d4e04143e49e6a721d1c90d1f0a6964b40ba8cb4da4685e0414f4d887cc280",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Scripts/author_environment.py",
+      "bytes": 3293,
+      "sha256": "6432a22d6bccf380e8c18c335412499cd53c4dd29b6e51bac11b4c9b1f735b51",
+      "local_source_sha256": "6432a22d6bccf380e8c18c335412499cd53c4dd29b6e51bac11b4c9b1f735b51",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Scripts/build_all.py",
+      "bytes": 1259,
+      "sha256": "b3ec9602e477208c675529a228144c61261685ac103b275118d9c1a42dde44c6",
+      "local_source_sha256": "37f8d425b5b7d1dacc34993d9690804d099661b3808138d498ea5da24a5d449f",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Scripts/build_clearance_geometry.py",
+      "bytes": 4703,
+      "sha256": "639faf26a4f093c55495377f1392ee1d21eea78bbedc9d1625202410b0a2040e",
+      "local_source_sha256": "1abc610c6950459e90dc27b331527aab41a192a12aa8a48a457bc65934b6c930",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Scripts/build_mask_pass.py",
+      "bytes": 14978,
+      "sha256": "3187a8b1fd9beeff64939df001854275e28b1c41dd9f5ebd581d8ebc1cdf779f",
+      "local_source_sha256": "d3dcc3122e890e6f8abece774333b9bb80e1160dbde89d05eca1f774f42924e7",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Scripts/build_physics_baseline.py",
+      "bytes": 6376,
+      "sha256": "dd867db8ff33c414ad16156987904e56e50980a43aa7e57f55b50b05fff61bf2",
+      "local_source_sha256": "dd867db8ff33c414ad16156987904e56e50980a43aa7e57f55b50b05fff61bf2",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Scripts/build_ramp_blender.py",
+      "bytes": 2188,
+      "sha256": "f6bd1ae7a033263f5df79b884329fb3012d6bc39289adf70f9c2e6cd9354d211",
+      "local_source_sha256": "babebec69babe6a6b48c6af1c1fa160def0d7ae6aa9804099e1f1560dbe333e1",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Scripts/build_reconstruction.py",
+      "bytes": 15067,
+      "sha256": "5fd6596769f579f79e06809101e76db2d5a6bc628aad36a08d61271b88c8bd06",
+      "local_source_sha256": "5fd6596769f579f79e06809101e76db2d5a6bc628aad36a08d61271b88c8bd06",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Scripts/build_render_stage.py",
+      "bytes": 2873,
+      "sha256": "2447a74f41612a480a5d2779de694ff5580d85cc1d358b5fd47c150c200555e3",
+      "local_source_sha256": "2447a74f41612a480a5d2779de694ff5580d85cc1d358b5fd47c150c200555e3",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Scripts/build_vehicle_blender.py",
+      "bytes": 25770,
+      "sha256": "541e7b38ab65d942f93af5910910dda512d617999d3171f8d069f07cc36dc584",
+      "local_source_sha256": "0a4aece6874c7e84677f6b0bf0d70fe2342475700dbf16378b17428d21cd54f6",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Scripts/encode_deliverables.py",
+      "bytes": 8291,
+      "sha256": "8859a83f5d7a6c39f9a0ac5d0bd07d5b0e950b7665dca43414c8037f6a350190",
+      "local_source_sha256": "8e9ca2201f09dad940590dc14469c8ad15e8ef950c87c968a78a9f31bddf7b26",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Scripts/generate_motion.py",
+      "bytes": 5058,
+      "sha256": "c5cbd1b59a996a396a345051482c26afe1560a9cc75fc016e2ee994a0f106ae8",
+      "local_source_sha256": "c5cbd1b59a996a396a345051482c26afe1560a9cc75fc016e2ee994a0f106ae8",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Scripts/open_workbench.py",
+      "bytes": 769,
+      "sha256": "c99ae84535e87049e4dd7d2982baeb2c5e5efff1b12f2593353583cdc976ebd5",
+      "local_source_sha256": "c99ae84535e87049e4dd7d2982baeb2c5e5efff1b12f2593353583cdc976ebd5",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Scripts/physics_diagnostic.py",
+      "bytes": 17258,
+      "sha256": "04dfc78af03ec0f08738d9d183fe160be93c774b866bab6fa51afa7ca5d27ba6",
+      "local_source_sha256": "f9d31b9ffa412031eb6f28b90d05da81ec77bde7bae3734b60e9727ad3969ac2",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Scripts/sanitize_public_blender.py",
+      "bytes": 4922,
+      "sha256": "468d8d52d5aa08fd31f15e5a5a800e412196786cccef54f0baf9550733e07382",
+      "copy_status": "publication_support_file"
+    },
+    {
+      "path": "Scripts/sanitize_public_unreal.py",
+      "bytes": 4312,
+      "sha256": "f5add4b35eb5e36ad97302b532a8644e1b2176bfa684536595327c072ebb8766",
+      "copy_status": "publication_support_file"
+    },
+    {
+      "path": "Scripts/setup_validate.py",
+      "bytes": 326,
+      "sha256": "a53d3089bc7bf716bc630d2d73a840fe27c07fe3ca3f5f5b885e03bc87832459",
+      "local_source_sha256": "a53d3089bc7bf716bc630d2d73a840fe27c07fe3ca3f5f5b885e03bc87832459",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Scripts/unreal_helpers.py",
+      "bytes": 7095,
+      "sha256": "aa3e7d77fd461b66803f28e94e670b8b4214f68cdbc960e7403fb7a0000bfb18",
+      "local_source_sha256": "1044211774e114b2b7d82f0aee1746a01a58083e0dc60550a113ceb5a84f8656",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Scripts/validate_physics_baseline.py",
+      "bytes": 11747,
+      "sha256": "c7cbf437e16dbe507fdc23267b568795bba8d136411f16b50f58f46c632449ff",
+      "local_source_sha256": "c7cbf437e16dbe507fdc23267b568795bba8d136411f16b50f58f46c632449ff",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Scripts/validate_reconstruction.py",
+      "bytes": 4948,
+      "sha256": "6bcfce53bd0c368ba08e8f2d164aa8494d8594b0d8e3fa92641f48225b9e917b",
+      "local_source_sha256": "ffa1b417818b06a5c1b213d57b203a8a5dc85496e02e5323991fdfb69f6c586c",
+      "copy_status": "public_copy_adjusted"
+    },
+    {
+      "path": "Scripts/validate_reference_runtime.py",
+      "bytes": 9620,
+      "sha256": "bc1831d53bee206184447b0528f2c8b39ecea705df60005482c42c55a7eca850",
+      "local_source_sha256": "bc1831d53bee206184447b0528f2c8b39ecea705df60005482c42c55a7eca850",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "Scripts/validate_render_stage.py",
+      "bytes": 5311,
+      "sha256": "bc40e5307c57f74fa32455eb41e0503b47a3e808ff7fb32ebcd9922fbdcf1989",
+      "local_source_sha256": "bc40e5307c57f74fa32455eb41e0503b47a3e808ff7fb32ebcd9922fbdcf1989",
+      "copy_status": "unchanged"
+    },
+    {
+      "path": "docs/getting_started.md",
+      "bytes": 5153,
+      "sha256": "157f278d11ba67372a29b3ce2923dfa27d7c4561e3a026e55148a6fcede3d14c",
+      "copy_status": "publication_support_file"
+    },
+    {
+      "path": "docs/public_copy.md",
+      "bytes": 2542,
+      "sha256": "1361dbe745ce4f8da8b90d8e492c44b46cbbab950d2b960923ae734c177f033e",
+      "copy_status": "publication_support_file"
+    },
+    {
+      "path": "docs/sources_and_scope.md",
+      "bytes": 3133,
+      "sha256": "d426f7732349a00786e34030b5278140edfde50045c1616c9e226090ac300b76",
+      "copy_status": "publication_support_file"
+    },
+    {
+      "path": "docs/validation.md",
+      "bytes": 5090,
+      "sha256": "e7b709bb2b020adcd86afd623e0071939808818bb3a4b4c73f838e977c902f6d",
+      "copy_status": "publication_support_file"
+    }
+  ]
+}

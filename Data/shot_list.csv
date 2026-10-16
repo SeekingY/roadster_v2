@@ -1,0 +1,6 @@
+﻿shot,description,first_frame,last_frame_inclusive,first_pts_s,last_pts_s,next_cut_first_frame,next_cut_pts_s,status,caveat,source
+A,rear close at ramp base,0,50,0.0,2.085416667,51,2.127125,hard_cut_pair_visually_verified,camera change unknown,https://x.com/Tesla/status/2110913438293647789
+B,continuous wide ascent departure landing and drive away,51,418,2.127125,17.434083333,419,17.475791667,hard_cut_pair_visually_verified,camera projection changes strongly; no cut at15s; zoom/dolly/pan not yet separated,https://x.com/Tesla/status/2110913438293647789
+C,close replay of departure and descent,419,655,17.475791667,27.318958333,656,27.360666667,hard_cut_pair_visually_verified,same maneuver repeated; source editing speed not calibrated,https://x.com/Tesla/status/2110913438293647789
+D,high close replay,656,742,27.360666667,30.947583333,743,30.989291667,hard_cut_pair_visually_verified,same maneuver repeated; source editing speed not calibrated,https://x.com/Tesla/status/2110913438293647789
+E,elevated wide replay and drive away,743,1093,30.989291667,45.587208333,unknown,unknown,hard_cut_pair_visually_verified,same maneuver repeated; last decoded video frame1093; audio/container duration differs,https://x.com/Tesla/status/2110913438293647789

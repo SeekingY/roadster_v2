@@ -1,0 +1,3 @@
+# Preserve release bytes: the clearance guard hashes CSV and sampled-ramp inputs.
+# Windows generators deliberately reproduce the supplied CRLF sampled-ramp JSON.
+* -text

@@ -1,0 +1,2153 @@
+{
+  "status": "initial match conditioned on estimated geometry; no recovered physical calibration",
+  "camera_keys": [
+    {
+      "source_frame": 72,
+      "pts_time_s": 3.003,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 8.887847964685529,
+        "yaw": -23.676977325328835,
+        "roll": 0.0
+      },
+      "focal_length_mm": 31.0424401188427,
+      "filmback_mm": [
+        36.0,
+        20.25
+      ],
+      "principal_point_px": [
+        960.0,
+        540.0
+      ],
+      "image_size_px": [
+        1920,
+        1080
+      ],
+      "landmarks_n": 4,
+      "landmark_rms_euclidean_px": 1.12693483957703,
+      "landmark_max_euclidean_px": 1.7463178728664868,
+      "all_edge_n": 0,
+      "all_edge_rms_horizontal_px": null,
+      "heldout_edge_n": 0,
+      "heldout_edge_rms_horizontal_px": null,
+      "all_edge_max_horizontal_px": null,
+      "points": [
+        {
+          "landmark": "terminal_image_left",
+          "world_cm": [
+            -730.694166899543,
+            -180.0,
+            2008.632
+          ],
+          "observed_px": [
+            845.0,
+            141.0
+          ],
+          "projected_px": [
+            844.6994697595331,
+            142.22804750300912
+          ],
+          "residual_xy_px": [
+            -0.3005302404668555,
+            1.2280475030091225
+          ],
+          "euclidean_error_px": 1.2642860020905107
+        },
+        {
+          "landmark": "terminal_image_right",
+          "world_cm": [
+            -730.694166899543,
+            180.0,
+            2008.632
+          ],
+          "observed_px": [
+            956.0,
+            124.0
+          ],
+          "projected_px": [
+            956.6732022818431,
+            122.38865745391797
+          ],
+          "residual_xy_px": [
+            0.673202281843146,
+            -1.611342546082028
+          ],
+          "euclidean_error_px": 1.7463178728664868
+        },
+        {
+          "landmark": "terminal_centerline",
+          "world_cm": [
+            -730.694166899543,
+            0.0,
+            2008.632
+          ],
+          "observed_px": [
+            900.0,
+            132.0
+          ],
+          "projected_px": [
+            899.8531830613073,
+            132.45596965759455
+          ],
+          "residual_xy_px": [
+            -0.14681693869272294,
+            0.4559696575945509
+          ],
+          "euclidean_error_px": 0.479023529833342
+        },
+        {
+          "landmark": "entry_image_right",
+          "world_cm": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "observed_px": [
+            1053.0,
+            832.0
+          ],
+          "projected_px": [
+            1052.5622428340334,
+            831.8961325655173
+          ],
+          "residual_xy_px": [
+            -0.4377571659665591,
+            -0.10386743448270863
+          ],
+          "euclidean_error_px": 0.44991085817203097
+        }
+      ],
+      "minimum_endpoint_depth_cm": 4727.680392132995,
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.15512221040043916,
+        -0.4132412112470288,
+        3.4353553043013685
+      ]
+    },
+    {
+      "source_frame": 144,
+      "pts_time_s": 6.006,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 8.833369599685133,
+        "yaw": -23.659240254426045,
+        "roll": 0.0
+      },
+      "focal_length_mm": 34.30415531694633,
+      "filmback_mm": [
+        36.0,
+        20.25
+      ],
+      "principal_point_px": [
+        960.0,
+        540.0
+      ],
+      "image_size_px": [
+        1920,
+        1080
+      ],
+      "landmarks_n": 6,
+      "landmark_rms_euclidean_px": 4.960408575972635,
+      "landmark_max_euclidean_px": 8.440711042070983,
+      "all_edge_n": 152,
+      "all_edge_rms_horizontal_px": 5.361201232288736,
+      "heldout_edge_n": 38,
+      "heldout_edge_rms_horizontal_px": 5.315290917117827,
+      "all_edge_max_horizontal_px": 9.435907579115792,
+      "points": [
+        {
+          "landmark": "terminal_image_left",
+          "world_cm": [
+            -730.694166899543,
+            -180.0,
+            2008.632
+          ],
+          "observed_px": [
+            832.0,
+            95.0
+          ],
+          "projected_px": [
+            832.0139505748067,
+            98.5771213872249
+          ],
+          "residual_xy_px": [
+            0.013950574806699478,
+            3.5771213872249064
+          ],
+          "euclidean_error_px": 3.5771485903550713
+        },
+        {
+          "landmark": "terminal_image_right",
+          "world_cm": [
+            -730.694166899543,
+            180.0,
+            2008.632
+          ],
+          "observed_px": [
+            958.0,
+            77.0
+          ],
+          "projected_px": [
+            955.7851284459296,
+            76.65786551831081
+          ],
+          "residual_xy_px": [
+            -2.2148715540704416,
+            -0.34213448168918603
+          ],
+          "euclidean_error_px": 2.2411407819659925
+        },
+        {
+          "landmark": "terminal_centerline",
+          "world_cm": [
+            -730.694166899543,
+            0.0,
+            2008.632
+          ],
+          "observed_px": [
+            894.0,
+            86.0
+          ],
+          "projected_px": [
+            892.9788939751629,
+            87.78053516730779
+          ],
+          "residual_xy_px": [
+            -1.0211060248370813,
+            1.7805351673077894
+          ],
+          "euclidean_error_px": 2.0525503638104388
+        },
+        {
+          "landmark": "entry_image_left",
+          "world_cm": [
+            0.0,
+            -180.0,
+            0.0
+          ],
+          "observed_px": [
+            940.0,
+            865.0
+          ],
+          "projected_px": [
+            943.3918635305159,
+            859.7760547753439
+          ],
+          "residual_xy_px": [
+            3.391863530515934,
+            -5.223945224656063
+          ],
+          "euclidean_error_px": 6.228510409387698
+        },
+        {
+          "landmark": "entry_image_right",
+          "world_cm": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "observed_px": [
+            1069.0,
+            865.0
+          ],
+          "projected_px": [
+            1061.694269819001,
+            860.7724818843465
+          ],
+          "residual_xy_px": [
+            -7.305730180999035,
+            -4.227518115653538
+          ],
+          "euclidean_error_px": 8.440711042070983
+        },
+        {
+          "landmark": "entry_centerline",
+          "world_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "observed_px": [
+            1003.0,
+            864.0
+          ],
+          "projected_px": [
+            1001.7233876326052,
+            860.2673644092581
+          ],
+          "residual_xy_px": [
+            -1.2766123673948186,
+            -3.732635590741893
+          ],
+          "euclidean_error_px": 3.944909072444951
+        }
+      ],
+      "minimum_endpoint_depth_cm": 4726.541256376444,
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.15417138356007903,
+        -0.4129316409601154,
+        3.5352664931009348
+      ]
+    },
+    {
+      "source_frame": 216,
+      "pts_time_s": 9.009,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 9.032524935993877,
+        "yaw": -23.714843259598606,
+        "roll": 0.0
+      },
+      "focal_length_mm": 38.47542133432987,
+      "filmback_mm": [
+        36.0,
+        20.25
+      ],
+      "principal_point_px": [
+        960.0,
+        540.0
+      ],
+      "image_size_px": [
+        1920,
+        1080
+      ],
+      "landmarks_n": 6,
+      "landmark_rms_euclidean_px": 3.8170213304778273,
+      "landmark_max_euclidean_px": 6.459180474330076,
+      "all_edge_n": 0,
+      "all_edge_rms_horizontal_px": null,
+      "heldout_edge_n": 0,
+      "heldout_edge_rms_horizontal_px": null,
+      "all_edge_max_horizontal_px": null,
+      "points": [
+        {
+          "landmark": "terminal_image_left",
+          "world_cm": [
+            -730.694166899543,
+            -180.0,
+            2008.632
+          ],
+          "observed_px": [
+            819.0,
+            51.0
+          ],
+          "projected_px": [
+            818.4726167034471,
+            52.49736124735665
+          ],
+          "residual_xy_px": [
+            -0.5273832965528982,
+            1.4973612473566504
+          ],
+          "euclidean_error_px": 1.5875212901150226
+        },
+        {
+          "landmark": "terminal_image_right",
+          "world_cm": [
+            -730.694166899543,
+            180.0,
+            2008.632
+          ],
+          "observed_px": [
+            958.0,
+            30.0
+          ],
+          "projected_px": [
+            957.1654310897455,
+            27.902037388599297
+          ],
+          "residual_xy_px": [
+            -0.8345689102544611,
+            -2.0979626114007033
+          ],
+          "euclidean_error_px": 2.257864562988351
+        },
+        {
+          "landmark": "terminal_centerline",
+          "world_cm": [
+            -730.694166899543,
+            0.0,
+            2008.632
+          ],
+          "observed_px": [
+            886.0,
+            40.0
+          ],
+          "projected_px": [
+            886.7865836415668,
+            40.382788849686165
+          ],
+          "residual_xy_px": [
+            0.7865836415668355,
+            0.38278884968616467
+          ],
+          "euclidean_error_px": 0.8747806174262214
+        },
+        {
+          "landmark": "entry_image_left",
+          "world_cm": [
+            0.0,
+            -180.0,
+            0.0
+          ],
+          "observed_px": [
+            937.0,
+            907.0
+          ],
+          "projected_px": [
+            943.3835475251444,
+            906.0144375239543
+          ],
+          "residual_xy_px": [
+            6.383547525144422,
+            -0.9855624760457431
+          ],
+          "euclidean_error_px": 6.459180474330076
+        },
+        {
+          "landmark": "entry_image_right",
+          "world_cm": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "observed_px": [
+            1082.0,
+            907.0
+          ],
+          "projected_px": [
+            1076.1590127154436,
+            907.1359306330837
+          ],
+          "residual_xy_px": [
+            -5.840987284556377,
+            0.1359306330837171
+          ],
+          "euclidean_error_px": 5.842568749733273
+        },
+        {
+          "landmark": "entry_centerline",
+          "world_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "observed_px": [
+            1008.0,
+            905.0
+          ],
+          "projected_px": [
+            1008.8492010261361,
+            906.5673957017382
+          ],
+          "residual_xy_px": [
+            0.8492010261361429,
+            1.567395701738178
+          ],
+          "euclidean_error_px": 1.782658595642473
+        }
+      ],
+      "minimum_endpoint_depth_cm": 4730.681770472048,
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.15764729990158322,
+        -0.41390209647438003,
+        3.6500196305247585
+      ]
+    },
+    {
+      "source_frame": 222,
+      "pts_time_s": 9.25925,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 9.148501724089899,
+        "yaw": -23.746889468310997,
+        "roll": 0.0
+      },
+      "focal_length_mm": 38.60140978604859,
+      "filmback_mm": [
+        36.0,
+        20.25
+      ],
+      "principal_point_px": [
+        960.0,
+        540.0
+      ],
+      "image_size_px": [
+        1920,
+        1080
+      ],
+      "landmarks_n": 5,
+      "landmark_rms_euclidean_px": 4.96897036667303,
+      "landmark_max_euclidean_px": 7.638913428151269,
+      "all_edge_n": 0,
+      "all_edge_rms_horizontal_px": null,
+      "heldout_edge_n": 0,
+      "heldout_edge_rms_horizontal_px": null,
+      "all_edge_max_horizontal_px": null,
+      "points": [
+        {
+          "landmark": "terminal_image_left",
+          "world_cm": [
+            -730.694166899543,
+            -180.0,
+            2008.632
+          ],
+          "observed_px": [
+            821.0,
+            54.0
+          ],
+          "projected_px": [
+            819.1762315968579,
+            55.332324867406214
+          ],
+          "residual_xy_px": [
+            -1.8237684031421395,
+            1.3323248674062143
+          ],
+          "euclidean_error_px": 2.258588218469364
+        },
+        {
+          "landmark": "terminal_image_right",
+          "world_cm": [
+            -730.694166899543,
+            180.0,
+            2008.632
+          ],
+          "observed_px": [
+            957.0,
+            32.0
+          ],
+          "projected_px": [
+            958.2491170803091,
+            30.650242770909074
+          ],
+          "residual_xy_px": [
+            1.2491170803091336,
+            -1.349757229090926
+          ],
+          "euclidean_error_px": 1.839059014225272
+        },
+        {
+          "landmark": "entry_image_left",
+          "world_cm": [
+            0.0,
+            -180.0,
+            0.0
+          ],
+          "observed_px": [
+            937.0,
+            913.0
+          ],
+          "projected_px": [
+            944.4930199473722,
+            911.5141835809657
+          ],
+          "residual_xy_px": [
+            7.493019947372204,
+            -1.485816419034336
+          ],
+          "euclidean_error_px": 7.638913428151269
+        },
+        {
+          "landmark": "entry_image_right",
+          "world_cm": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "observed_px": [
+            1085.0,
+            911.0
+          ],
+          "projected_px": [
+            1077.7554884688157,
+            912.6416318676529
+          ],
+          "residual_xy_px": [
+            -7.244511531184344,
+            1.6416318676529045
+          ],
+          "euclidean_error_px": 7.428182988750108
+        },
+        {
+          "landmark": "entry_centerline",
+          "world_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "observed_px": [
+            1009.0,
+            912.0
+          ],
+          "projected_px": [
+            1010.1975656054516,
+            912.0700676063155
+          ],
+          "residual_xy_px": [
+            1.1975656054515866,
+            0.07006760631554698
+          ],
+          "euclidean_error_px": 1.19961362480401
+        }
+      ],
+      "minimum_endpoint_depth_cm": 4733.064691484259,
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.15967147670974657,
+        -0.41446140832919254,
+        3.653288798758465
+      ]
+    },
+    {
+      "source_frame": 228,
+      "pts_time_s": 9.5095,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 9.474744728401483,
+        "yaw": -24.200179980786075,
+        "roll": 0.0
+      },
+      "focal_length_mm": 37.545931999849955,
+      "filmback_mm": [
+        36.0,
+        20.25
+      ],
+      "principal_point_px": [
+        960.0,
+        540.0
+      ],
+      "image_size_px": [
+        1920,
+        1080
+      ],
+      "landmarks_n": 4,
+      "landmark_rms_euclidean_px": 5.619701753531395,
+      "landmark_max_euclidean_px": 8.226537010721398,
+      "all_edge_n": 0,
+      "all_edge_rms_horizontal_px": null,
+      "heldout_edge_n": 0,
+      "heldout_edge_rms_horizontal_px": null,
+      "all_edge_max_horizontal_px": null,
+      "points": [
+        {
+          "landmark": "terminal_image_right",
+          "world_cm": [
+            -730.694166899543,
+            180.0,
+            2008.632
+          ],
+          "observed_px": [
+            974.0,
+            57.0
+          ],
+          "projected_px": [
+            973.2961831423407,
+            56.641926029190984
+          ],
+          "residual_xy_px": [
+            -0.7038168576592625,
+            -0.3580739708090164
+          ],
+          "euclidean_error_px": 0.789667738796701
+        },
+        {
+          "landmark": "entry_image_left",
+          "world_cm": [
+            0.0,
+            -180.0,
+            0.0
+          ],
+          "observed_px": [
+            953.0,
+            915.0
+          ],
+          "projected_px": [
+            961.0135833946214,
+            913.1403246610719
+          ],
+          "residual_xy_px": [
+            8.013583394621378,
+            -1.8596753389281275
+          ],
+          "euclidean_error_px": 8.226537010721398
+        },
+        {
+          "landmark": "entry_image_right",
+          "world_cm": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "observed_px": [
+            1098.0,
+            912.0
+          ],
+          "projected_px": [
+            1090.8280047489066,
+            914.2594726851012
+          ],
+          "residual_xy_px": [
+            -7.171995251093449,
+            2.259472685101173
+          ],
+          "euclidean_error_px": 7.519490188598247
+        },
+        {
+          "landmark": "entry_centerline",
+          "world_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "observed_px": [
+            1024.0,
+            913.0
+          ],
+          "projected_px": [
+            1025.0015708966787,
+            913.6919739233606
+          ],
+          "residual_xy_px": [
+            1.001570896678686,
+            0.6919739233605924
+          ],
+          "euclidean_error_px": 1.2173627937820335
+        }
+      ],
+      "minimum_endpoint_depth_cm": 4739.548531398737,
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.16536549129658176,
+        -0.42237282023993505,
+        3.625565036784831
+      ]
+    },
+    {
+      "source_frame": 234,
+      "pts_time_s": 9.75975,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 10.548805868018793,
+        "yaw": -25.773409401474343,
+        "roll": 0.0
+      },
+      "focal_length_mm": 34.806357999642884,
+      "filmback_mm": [
+        36.0,
+        20.25
+      ],
+      "principal_point_px": [
+        960.0,
+        540.0
+      ],
+      "image_size_px": [
+        1920,
+        1080
+      ],
+      "landmarks_n": 5,
+      "landmark_rms_euclidean_px": 5.479254029480879,
+      "landmark_max_euclidean_px": 8.206857827955835,
+      "all_edge_n": 0,
+      "all_edge_rms_horizontal_px": null,
+      "heldout_edge_n": 0,
+      "heldout_edge_rms_horizontal_px": null,
+      "all_edge_max_horizontal_px": null,
+      "points": [
+        {
+          "landmark": "terminal_image_right",
+          "world_cm": [
+            -730.694166899543,
+            180.0,
+            2008.632
+          ],
+          "observed_px": [
+            1019.0,
+            129.0
+          ],
+          "projected_px": [
+            1020.3356276835199,
+            128.17556981262976
+          ],
+          "residual_xy_px": [
+            1.3356276835198742,
+            -0.8244301873702398
+          ],
+          "euclidean_error_px": 1.5695816139443
+        },
+        {
+          "landmark": "terminal_centerline",
+          "world_cm": [
+            -730.694166899543,
+            0.0,
+            2008.632
+          ],
+          "observed_px": [
+            956.0,
+            140.0
+          ],
+          "projected_px": [
+            957.1362248968385,
+            140.23154989902736
+          ],
+          "residual_xy_px": [
+            1.1362248968384847,
+            0.2315498990273568
+          ],
+          "euclidean_error_px": 1.159578532025841
+        },
+        {
+          "landmark": "entry_image_left",
+          "world_cm": [
+            0.0,
+            -180.0,
+            0.0
+          ],
+          "observed_px": [
+            1006.0,
+            923.0
+          ],
+          "projected_px": [
+            1012.9874375279627,
+            922.065599859403
+          ],
+          "residual_xy_px": [
+            6.9874375279626975,
+            -0.9344001405969493
+          ],
+          "euclidean_error_px": 7.04963735449768
+        },
+        {
+          "landmark": "entry_image_right",
+          "world_cm": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "observed_px": [
+            1142.0,
+            921.0
+          ],
+          "projected_px": [
+            1134.0871585551906,
+            923.1770290943364
+          ],
+          "residual_xy_px": [
+            -7.912841444809374,
+            2.177029094336376
+          ],
+          "euclidean_error_px": 8.206857827955835
+        },
+        {
+          "landmark": "entry_centerline",
+          "world_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "observed_px": [
+            1078.0,
+            922.0
+          ],
+          "projected_px": [
+            1072.6262395652232,
+            922.6129529627656
+          ],
+          "residual_xy_px": [
+            -5.373760434776841,
+            0.6129529627655756
+          ],
+          "euclidean_error_px": 5.408605415903075
+        }
+      ],
+      "minimum_endpoint_depth_cm": 4757.648732162924,
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.18411139455062633,
+        -0.44983085352018837,
+        3.5498000712317714
+      ]
+    },
+    {
+      "source_frame": 240,
+      "pts_time_s": 10.01,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 12.555750954903793,
+        "yaw": -28.322300393758812,
+        "roll": 0.0
+      },
+      "focal_length_mm": 31.35297512423915,
+      "filmback_mm": [
+        36.0,
+        20.25
+      ],
+      "principal_point_px": [
+        960.0,
+        540.0
+      ],
+      "image_size_px": [
+        1920,
+        1080
+      ],
+      "landmarks_n": 6,
+      "landmark_rms_euclidean_px": 3.9244778680782773,
+      "landmark_max_euclidean_px": 5.690123823579612,
+      "all_edge_n": 0,
+      "all_edge_rms_horizontal_px": null,
+      "heldout_edge_n": 0,
+      "heldout_edge_rms_horizontal_px": null,
+      "all_edge_max_horizontal_px": null,
+      "points": [
+        {
+          "landmark": "terminal_image_left",
+          "world_cm": [
+            -730.694166899543,
+            -180.0,
+            2008.632
+          ],
+          "observed_px": [
+            976.0,
+            251.0
+          ],
+          "projected_px": [
+            972.5020541607595,
+            251.51199398747025
+          ],
+          "residual_xy_px": [
+            -3.497945839240515,
+            0.5119939874702482
+          ],
+          "euclidean_error_px": 3.5352175233591656
+        },
+        {
+          "landmark": "terminal_image_right",
+          "world_cm": [
+            -730.694166899543,
+            180.0,
+            2008.632
+          ],
+          "observed_px": [
+            1080.0,
+            229.0
+          ],
+          "projected_px": [
+            1083.7840385074383,
+            228.46499208163254
+          ],
+          "residual_xy_px": [
+            3.784038507438254,
+            -0.5350079183674552
+          ],
+          "euclidean_error_px": 3.821672526328153
+        },
+        {
+          "landmark": "terminal_centerline",
+          "world_cm": [
+            -730.694166899543,
+            0.0,
+            2008.632
+          ],
+          "observed_px": [
+            1025.0,
+            240.0
+          ],
+          "projected_px": [
+            1027.1895175758377,
+            240.1859731499352
+          ],
+          "residual_xy_px": [
+            2.1895175758377263,
+            0.18597314993519376
+          ],
+          "euclidean_error_px": 2.1974014716021126
+        },
+        {
+          "landmark": "entry_image_left",
+          "world_cm": [
+            0.0,
+            -180.0,
+            0.0
+          ],
+          "observed_px": [
+            1082.0,
+            948.0
+          ],
+          "projected_px": [
+            1084.8463893959843,
+            945.7548239578645
+          ],
+          "residual_xy_px": [
+            2.8463893959842608,
+            -2.2451760421355402
+          ],
+          "euclidean_error_px": 3.6252928231731922
+        },
+        {
+          "landmark": "entry_image_right",
+          "world_cm": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "observed_px": [
+            1199.0,
+            945.0
+          ],
+          "projected_px": [
+            1195.6161617695584,
+            946.8727049440965
+          ],
+          "residual_xy_px": [
+            -3.3838382304415973,
+            1.8727049440965402
+          ],
+          "euclidean_error_px": 3.8674778573951456
+        },
+        {
+          "landmark": "entry_centerline",
+          "world_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "observed_px": [
+            1145.0,
+            946.0
+          ],
+          "projected_px": [
+            1139.3180320656486,
+            946.304548059706
+          ],
+          "residual_xy_px": [
+            -5.681967934351405,
+            0.30454805970600773
+          ],
+          "euclidean_error_px": 5.690123823579612
+        }
+      ],
+      "minimum_endpoint_depth_cm": 4780.650996528412,
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.21913919422349326,
+        -0.49431739360997773,
+        3.4453091628708914
+      ]
+    },
+    {
+      "source_frame": 252,
+      "pts_time_s": 10.5105,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 16.749317611934174,
+        "yaw": -34.42361443894372,
+        "roll": 0.0
+      },
+      "focal_length_mm": 25.783409940248898,
+      "filmback_mm": [
+        36.0,
+        20.25
+      ],
+      "principal_point_px": [
+        960.0,
+        540.0
+      ],
+      "image_size_px": [
+        1920,
+        1080
+      ],
+      "landmarks_n": 6,
+      "landmark_rms_euclidean_px": 4.356390042857691,
+      "landmark_max_euclidean_px": 8.06061260239164,
+      "all_edge_n": 0,
+      "all_edge_rms_horizontal_px": null,
+      "heldout_edge_n": 0,
+      "heldout_edge_rms_horizontal_px": null,
+      "all_edge_max_horizontal_px": null,
+      "points": [
+        {
+          "landmark": "terminal_image_left",
+          "world_cm": [
+            -730.694166899543,
+            -180.0,
+            2008.632
+          ],
+          "observed_px": [
+            1108.0,
+            402.0
+          ],
+          "projected_px": [
+            1106.8027432077956,
+            402.09313282150504
+          ],
+          "residual_xy_px": [
+            -1.1972567922043709,
+            0.0931328215050371
+          ],
+          "euclidean_error_px": 1.2008736606825003
+        },
+        {
+          "landmark": "terminal_image_right",
+          "world_cm": [
+            -730.694166899543,
+            180.0,
+            2008.632
+          ],
+          "observed_px": [
+            1198.0,
+            380.0
+          ],
+          "projected_px": [
+            1198.3564061179359,
+            379.5642944679966
+          ],
+          "residual_xy_px": [
+            0.35640611793587595,
+            -0.43570553200339646
+          ],
+          "euclidean_error_px": 0.562907302777717
+        },
+        {
+          "landmark": "terminal_centerline",
+          "world_cm": [
+            -730.694166899543,
+            0.0,
+            2008.632
+          ],
+          "observed_px": [
+            1150.0,
+            391.0
+          ],
+          "projected_px": [
+            1151.6637049468527,
+            391.0540839918136
+          ],
+          "residual_xy_px": [
+            1.6637049468527039,
+            0.05408399181362711
+          ],
+          "euclidean_error_px": 1.6645838003394886
+        },
+        {
+          "landmark": "entry_image_left",
+          "world_cm": [
+            0.0,
+            -180.0,
+            0.0
+          ],
+          "observed_px": [
+            1215.0,
+            985.0
+          ],
+          "projected_px": [
+            1221.2359984687196,
+            982.7629230548376
+          ],
+          "residual_xy_px": [
+            6.235998468719572,
+            -2.2370769451623573
+          ],
+          "euclidean_error_px": 6.625118124263882
+        },
+        {
+          "landmark": "entry_image_right",
+          "world_cm": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "observed_px": [
+            1325.0,
+            981.0
+          ],
+          "projected_px": [
+            1317.4962882310415,
+            983.944110258504
+          ],
+          "residual_xy_px": [
+            -7.50371176895851,
+            2.944110258503997
+          ],
+          "euclidean_error_px": 8.06061260239164
+        },
+        {
+          "landmark": "entry_centerline",
+          "world_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "observed_px": [
+            1269.0,
+            983.0
+          ],
+          "projected_px": [
+            1268.4028553581957,
+            983.3416963780073
+          ],
+          "residual_xy_px": [
+            -0.5971446418043342,
+            0.34169637800732744
+          ],
+          "euclidean_error_px": 0.6879957397970957
+        }
+      ],
+      "minimum_endpoint_depth_cm": 4771.0106238750905,
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.2923307397905252,
+        -0.6008054123966285,
+        3.2497312595262113
+      ]
+    },
+    {
+      "source_frame": 264,
+      "pts_time_s": 11.011,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 17.55263456569712,
+        "yaw": -39.93040248170947,
+        "roll": 0.0
+      },
+      "focal_length_mm": 25.4128163099164,
+      "filmback_mm": [
+        36.0,
+        20.25
+      ],
+      "principal_point_px": [
+        960.0,
+        540.0
+      ],
+      "image_size_px": [
+        1920,
+        1080
+      ],
+      "landmarks_n": 6,
+      "landmark_rms_euclidean_px": 3.4381892769475906,
+      "landmark_max_euclidean_px": 6.856267088480202,
+      "all_edge_n": 0,
+      "all_edge_rms_horizontal_px": null,
+      "heldout_edge_n": 0,
+      "heldout_edge_rms_horizontal_px": null,
+      "all_edge_max_horizontal_px": null,
+      "points": [
+        {
+          "landmark": "terminal_image_left",
+          "world_cm": [
+            -730.694166899543,
+            -180.0,
+            2008.632
+          ],
+          "observed_px": [
+            1230.0,
+            416.0
+          ],
+          "projected_px": [
+            1228.1769342499979,
+            415.5904495662787
+          ],
+          "residual_xy_px": [
+            -1.8230657500021152,
+            -0.40955043372127875
+          ],
+          "euclidean_error_px": 1.8685021505452069
+        },
+        {
+          "landmark": "terminal_image_right",
+          "world_cm": [
+            -730.694166899543,
+            180.0,
+            2008.632
+          ],
+          "observed_px": [
+            1320.0,
+            390.0
+          ],
+          "projected_px": [
+            1320.6509761292648,
+            389.57997990472256
+          ],
+          "residual_xy_px": [
+            0.6509761292647909,
+            -0.42002009527743667
+          ],
+          "euclidean_error_px": 0.7747172395845059
+        },
+        {
+          "landmark": "terminal_centerline",
+          "world_cm": [
+            -730.694166899543,
+            0.0,
+            2008.632
+          ],
+          "observed_px": [
+            1274.0,
+            402.0
+          ],
+          "projected_px": [
+            1273.3517798197145,
+            402.88397620058885
+          ],
+          "residual_xy_px": [
+            -0.6482201802855343,
+            0.8839762005888474
+          ],
+          "euclidean_error_px": 1.0961766852733663
+        },
+        {
+          "landmark": "entry_image_left",
+          "world_cm": [
+            0.0,
+            -180.0,
+            0.0
+          ],
+          "observed_px": [
+            1358.0,
+            1002.0
+          ],
+          "projected_px": [
+            1363.6516356220118,
+            998.118323405462
+          ],
+          "residual_xy_px": [
+            5.651635622011781,
+            -3.881676594538021
+          ],
+          "euclidean_error_px": 6.856267088480202
+        },
+        {
+          "landmark": "entry_image_right",
+          "world_cm": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "observed_px": [
+            1467.0,
+            997.0
+          ],
+          "projected_px": [
+            1464.0291833712695,
+            999.5227193541132
+          ],
+          "residual_xy_px": [
+            -2.9708166287305176,
+            2.5227193541131783
+          ],
+          "euclidean_error_px": 3.8974176554686784
+        },
+        {
+          "landmark": "entry_centerline",
+          "world_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "observed_px": [
+            1411.0,
+            998.0
+          ],
+          "projected_px": [
+            1412.6699907861769,
+            998.8041458921207
+          ],
+          "residual_xy_px": [
+            1.669990786176868,
+            0.8041458921206868
+          ],
+          "euclidean_error_px": 1.8535155358750592
+        }
+      ],
+      "minimum_endpoint_depth_cm": 4613.404274815515,
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.30635126557077963,
+        -0.6969169949523452,
+        3.235253625897814
+      ]
+    },
+    {
+      "source_frame": 276,
+      "pts_time_s": 11.5115,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 16.436532187563103,
+        "yaw": -45.02176991781175,
+        "roll": 0.0
+      },
+      "focal_length_mm": 25.2295605686553,
+      "filmback_mm": [
+        36.0,
+        20.25
+      ],
+      "principal_point_px": [
+        960.0,
+        540.0
+      ],
+      "image_size_px": [
+        1920,
+        1080
+      ],
+      "landmarks_n": 6,
+      "landmark_rms_euclidean_px": 3.439573203350222,
+      "landmark_max_euclidean_px": 5.089104239958304,
+      "all_edge_n": 0,
+      "all_edge_rms_horizontal_px": null,
+      "heldout_edge_n": 0,
+      "heldout_edge_rms_horizontal_px": null,
+      "all_edge_max_horizontal_px": null,
+      "points": [
+        {
+          "landmark": "terminal_image_left",
+          "world_cm": [
+            -730.694166899543,
+            -180.0,
+            2008.632
+          ],
+          "observed_px": [
+            1348.0,
+            378.0
+          ],
+          "projected_px": [
+            1344.3183928134358,
+            378.6227333954023
+          ],
+          "residual_xy_px": [
+            -3.681607186564179,
+            0.6227333954022924
+          ],
+          "euclidean_error_px": 3.7339025640622006
+        },
+        {
+          "landmark": "terminal_image_right",
+          "world_cm": [
+            -730.694166899543,
+            180.0,
+            2008.632
+          ],
+          "observed_px": [
+            1438.0,
+            349.0
+          ],
+          "projected_px": [
+            1440.1694638198715,
+            348.66073274258235
+          ],
+          "residual_xy_px": [
+            2.169463819871453,
+            -0.33926725741764585
+          ],
+          "euclidean_error_px": 2.195831400104964
+        },
+        {
+          "landmark": "terminal_centerline",
+          "world_cm": [
+            -730.694166899543,
+            0.0,
+            2008.632
+          ],
+          "observed_px": [
+            1392.0,
+            364.0
+          ],
+          "projected_px": [
+            1390.9916116531558,
+            364.0331936160188
+          ],
+          "residual_xy_px": [
+            -1.0083883468441854,
+            0.03319361601882065
+          ],
+          "euclidean_error_px": 1.0089345242361143
+        },
+        {
+          "landmark": "entry_image_left",
+          "world_cm": [
+            0.0,
+            -180.0,
+            0.0
+          ],
+          "observed_px": [
+            1493.0,
+            969.0
+          ],
+          "projected_px": [
+            1497.5204024718105,
+            966.6622781478518
+          ],
+          "residual_xy_px": [
+            4.520402471810485,
+            -2.3377218521482064
+          ],
+          "euclidean_error_px": 5.089104239958304
+        },
+        {
+          "landmark": "entry_image_right",
+          "world_cm": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "observed_px": [
+            1606.0,
+            967.0
+          ],
+          "projected_px": [
+            1603.2885262922173,
+            968.2823228696783
+          ],
+          "residual_xy_px": [
+            -2.711473707782716,
+            1.2823228696782962
+          ],
+          "euclidean_error_px": 2.999406876383551
+        },
+        {
+          "landmark": "entry_centerline",
+          "world_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "observed_px": [
+            1545.0,
+            968.0
+          ],
+          "projected_px": [
+            1549.000660484929,
+            967.4507985192071
+          ],
+          "residual_xy_px": [
+            4.000660484929085,
+            -0.5492014807929309
+          ],
+          "euclidean_error_px": 4.038181098239425
+        }
+      ],
+      "minimum_endpoint_depth_cm": 4478.534303907489,
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.2868716042830023,
+        -0.7857781201411519,
+        3.228016345484059
+      ]
+    },
+    {
+      "source_frame": 288,
+      "pts_time_s": 12.012,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 12.904812050050301,
+        "yaw": -50.483746037417404,
+        "roll": 0.0
+      },
+      "focal_length_mm": 25.07274459604127,
+      "filmback_mm": [
+        36.0,
+        20.25
+      ],
+      "principal_point_px": [
+        960.0,
+        540.0
+      ],
+      "image_size_px": [
+        1920,
+        1080
+      ],
+      "landmarks_n": 6,
+      "landmark_rms_euclidean_px": 3.635092752974689,
+      "landmark_max_euclidean_px": 5.569438150689215,
+      "all_edge_n": 0,
+      "all_edge_rms_horizontal_px": null,
+      "heldout_edge_n": 0,
+      "heldout_edge_rms_horizontal_px": null,
+      "all_edge_max_horizontal_px": null,
+      "points": [
+        {
+          "landmark": "terminal_image_left",
+          "world_cm": [
+            -730.694166899543,
+            -180.0,
+            2008.632
+          ],
+          "observed_px": [
+            1482.0,
+            277.0
+          ],
+          "projected_px": [
+            1478.6416310062523,
+            277.7229863353303
+          ],
+          "residual_xy_px": [
+            -3.3583689937477175,
+            0.7229863353302903
+          ],
+          "euclidean_error_px": 3.4353095259729334
+        },
+        {
+          "landmark": "terminal_image_right",
+          "world_cm": [
+            -730.694166899543,
+            180.0,
+            2008.632
+          ],
+          "observed_px": [
+            1578.0,
+            243.0
+          ],
+          "projected_px": [
+            1581.717824225123,
+            242.2023913742202
+          ],
+          "residual_xy_px": [
+            3.7178242251229676,
+            -0.7976086257797874
+          ],
+          "euclidean_error_px": 3.8024198201710333
+        },
+        {
+          "landmark": "terminal_centerline",
+          "world_cm": [
+            -730.694166899543,
+            0.0,
+            2008.632
+          ],
+          "observed_px": [
+            1529.0,
+            260.0
+          ],
+          "projected_px": [
+            1528.6188416245877,
+            260.5005783260385
+          ],
+          "residual_xy_px": [
+            -0.3811583754122694,
+            0.5005783260385215
+          ],
+          "euclidean_error_px": 0.6291743539325557
+        },
+        {
+          "landmark": "entry_image_left",
+          "world_cm": [
+            0.0,
+            -180.0,
+            0.0
+          ],
+          "observed_px": [
+            1639.0,
+            879.0
+          ],
+          "projected_px": [
+            1641.6639325193246,
+            876.145117345968
+          ],
+          "residual_xy_px": [
+            2.6639325193245895,
+            -2.8548826540320533
+          ],
+          "euclidean_error_px": 3.9047268068084042
+        },
+        {
+          "landmark": "entry_image_right",
+          "world_cm": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "observed_px": [
+            1760.0,
+            876.0
+          ],
+          "projected_px": [
+            1754.8029534017496,
+            878.0023356287013
+          ],
+          "residual_xy_px": [
+            -5.197046598250381,
+            2.002335628701303
+          ],
+          "euclidean_error_px": 5.569438150689215
+        },
+        {
+          "landmark": "entry_centerline",
+          "world_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "observed_px": [
+            1694.0,
+            877.0
+          ],
+          "projected_px": [
+            1696.5219382536998,
+            877.0456315134898
+          ],
+          "residual_xy_px": [
+            2.5219382536997728,
+            0.04563151348975225
+          ],
+          "euclidean_error_px": 2.5223510442635906
+        }
+      ],
+      "minimum_endpoint_depth_cm": 4333.788140761938,
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.225231459624417,
+        -0.8811075870935742,
+        3.2217813834831954
+      ]
+    },
+    {
+      "source_frame": 300,
+      "pts_time_s": 12.5125,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 10.412254626333564,
+        "yaw": -57.56350727430427,
+        "roll": 0.0
+      },
+      "focal_length_mm": 24.931907077922883,
+      "filmback_mm": [
+        36.0,
+        20.25
+      ],
+      "principal_point_px": [
+        960.0,
+        540.0
+      ],
+      "image_size_px": [
+        1920,
+        1080
+      ],
+      "landmarks_n": 4,
+      "landmark_rms_euclidean_px": 4.050697289381926,
+      "landmark_max_euclidean_px": 5.705487202344699,
+      "all_edge_n": 0,
+      "all_edge_rms_horizontal_px": null,
+      "heldout_edge_n": 0,
+      "heldout_edge_rms_horizontal_px": null,
+      "all_edge_max_horizontal_px": null,
+      "points": [
+        {
+          "landmark": "terminal_image_left",
+          "world_cm": [
+            -730.694166899543,
+            -180.0,
+            2008.632
+          ],
+          "observed_px": [
+            1675.0,
+            187.0
+          ],
+          "projected_px": [
+            1669.3922642836678,
+            185.94838963874844
+          ],
+          "residual_xy_px": [
+            -5.607735716332172,
+            -1.0516103612515622
+          ],
+          "euclidean_error_px": 5.705487202344699
+        },
+        {
+          "landmark": "terminal_image_right",
+          "world_cm": [
+            -730.694166899543,
+            180.0,
+            2008.632
+          ],
+          "observed_px": [
+            1781.0,
+            141.0
+          ],
+          "projected_px": [
+            1786.1866697243718,
+            141.39304314102287
+          ],
+          "residual_xy_px": [
+            5.186669724371768,
+            0.3930431410228721
+          ],
+          "euclidean_error_px": 5.201540708330546
+        },
+        {
+          "landmark": "terminal_centerline",
+          "world_cm": [
+            -730.694166899543,
+            0.0,
+            2008.632
+          ],
+          "observed_px": [
+            1725.0,
+            163.0
+          ],
+          "projected_px": [
+            1725.6934168327207,
+            164.4703286770192
+          ],
+          "residual_xy_px": [
+            0.6934168327206862,
+            1.4703286770192108
+          ],
+          "euclidean_error_px": 1.6256362823108528
+        },
+        {
+          "landmark": "entry_image_left",
+          "world_cm": [
+            0.0,
+            -180.0,
+            0.0
+          ],
+          "observed_px": [
+            1856.0,
+            817.0
+          ],
+          "projected_px": [
+            1854.896038014444,
+            815.5294358985861
+          ],
+          "residual_xy_px": [
+            -1.1039619855559977,
+            -1.4705641014138564
+          ],
+          "euclidean_error_px": 1.8388286602943418
+        }
+      ],
+      "minimum_endpoint_depth_cm": 4013.4002123550604,
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.18172812578553255,
+        -1.0046727309323162,
+        3.216148391919078
+      ]
+    },
+    {
+      "source_frame": 372,
+      "pts_time_s": 15.5155,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 15.253878889698226,
+        "yaw": -97.70096722356679,
+        "roll": 0
+      },
+      "focal_length_mm": 25.000528246045587,
+      "filmback_mm": [
+        36,
+        20.25
+      ],
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.266230410325691,
+        -1.7052035604343034,
+        3.2188969544867923
+      ],
+      "status": "conditional_fit_visible_bbox",
+      "constraint_scope": "vehicle_bbox_only_no_static_calibration",
+      "ground_trajectory_unchanged": true,
+      "observed_center_and_size_px": [
+        1143.5,
+        937.0,
+        339.0,
+        106.0
+      ],
+      "predicted_center_and_size_px": [
+        1143.4978707407813,
+        937.0211298314291,
+        342.9797267136048,
+        89.277568712826
+      ],
+      "predicted_center_error_px": 0.021236843481149962,
+      "predicted_size_error_wh_px": [
+        3.979726713604805,
+        -16.722431287174004
+      ],
+      "reference_eligible_for_center_fit": true,
+      "bbox_projection_clipped_to_image": false,
+      "basis": "same assumed y=0 ground trajectory and body orientation; camera inferred from vehicle box only; no independent static camera evidence"
+    },
+    {
+      "source_frame": 384,
+      "pts_time_s": 16.016,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 16.221294325822498,
+        "yaw": -101.52243546191907,
+        "roll": 0
+      },
+      "focal_length_mm": 26.994843103534993,
+      "filmback_mm": [
+        36,
+        20.25
+      ],
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.28311499492067643,
+        -1.771900763453938,
+        3.295645851596868
+      ],
+      "status": "conditional_fit_visible_bbox",
+      "constraint_scope": "vehicle_bbox_only_no_static_calibration",
+      "ground_trajectory_unchanged": true,
+      "observed_center_and_size_px": [
+        1183.0,
+        995.5,
+        368.0,
+        117.0
+      ],
+      "predicted_center_and_size_px": [
+        1182.9951769543395,
+        995.5245994939585,
+        372.58889567990593,
+        97.87506755990398
+      ],
+      "predicted_center_error_px": 0.025067845389188263,
+      "predicted_size_error_wh_px": [
+        4.5888956799059315,
+        -19.124932440096018
+      ],
+      "reference_eligible_for_center_fit": true,
+      "bbox_projection_clipped_to_image": false,
+      "basis": "same assumed y=0 ground trajectory and body orientation; camera inferred from vehicle box only; no independent static camera evidence"
+    },
+    {
+      "source_frame": 396,
+      "pts_time_s": 16.5165,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 15.21602531801051,
+        "yaw": -101.25092441313656,
+        "roll": 0
+      },
+      "focal_length_mm": 30.095224635495406,
+      "filmback_mm": [
+        36,
+        20.25
+      ],
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.26556974086610063,
+        -1.7671620016971403,
+        3.404366509185049
+      ],
+      "status": "conditional_fit_visible_truncated_bbox",
+      "constraint_scope": "vehicle_bbox_only_no_static_calibration",
+      "ground_trajectory_unchanged": true,
+      "observed_center_and_size_px": [
+        1110.5,
+        1016.5,
+        399.0,
+        127.0
+      ],
+      "predicted_center_and_size_px": [
+        1110.4992554220648,
+        1016.5239342906359,
+        403.9141706189505,
+        106.70481095616185
+      ],
+      "predicted_center_error_px": 0.023945869467313186,
+      "predicted_size_error_wh_px": [
+        4.914170618950493,
+        -20.29518904383815
+      ],
+      "reference_eligible_for_center_fit": false,
+      "bbox_projection_clipped_to_image": true,
+      "basis": "same assumed y=0 ground trajectory and body orientation; camera inferred from vehicle box only; no independent static camera evidence"
+    },
+    {
+      "source_frame": 408,
+      "pts_time_s": 17.017,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 13.293967388923422,
+        "yaw": -100.45960555367564,
+        "roll": 0
+      },
+      "focal_length_mm": 34.23894953210968,
+      "filmback_mm": [
+        36,
+        20.25
+      ],
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.23202350158946725,
+        -1.753350882166421,
+        3.533363871250043
+      ],
+      "status": "conditional_fit_visible_truncated_bbox",
+      "constraint_scope": "vehicle_bbox_only_no_static_calibration",
+      "ground_trajectory_unchanged": true,
+      "observed_center_and_size_px": [
+        1008.5,
+        1015.5,
+        449.0,
+        129.0
+      ],
+      "predicted_center_and_size_px": [
+        1008.5024681920511,
+        1015.5116920428682,
+        451.72994307012016,
+        117.75581926013899
+      ],
+      "predicted_center_error_px": 0.011949721270053794,
+      "predicted_size_error_wh_px": [
+        2.7299430701201572,
+        -11.244180739861008
+      ],
+      "reference_eligible_for_center_fit": false,
+      "bbox_projection_clipped_to_image": true,
+      "basis": "same assumed y=0 ground trajectory and body orientation; camera inferred from vehicle box only; no independent static camera evidence"
+    },
+    {
+      "source_frame": 418,
+      "pts_time_s": 17.434083333333334,
+      "unreal_location_cm": [
+        -4835.8776575878765,
+        1990.4555849092237,
+        100.00000000000001
+      ],
+      "unreal_rotation_deg": {
+        "pitch": 11.692252448017506,
+        "yaw": -99.80017317079154,
+        "roll": 0
+      },
+      "focal_length_mm": 38.12467357679807,
+      "filmback_mm": [
+        36,
+        20.25
+      ],
+      "optimization_vector": [
+        -4.835877657587877,
+        1.9904555849092238,
+        0.10000000000000002,
+        0.20406830219227262,
+        -1.7418416158908214,
+        3.6408616729708716
+      ],
+      "status": "short_extrapolation_after_last_visible_bbox",
+      "constraint_scope": "vehicle_bbox_only_no_static_calibration",
+      "basis": "10-frame extrapolation of last pan/zoom; not source-validated"
+    }
+  ],
+  "geometry_file": "Data/ramp_parameters.json",
+  "fit_report": "Data/camera_fit_all_static.json",
+  "source_fps": [
+    24000,
+    1001
+  ],
+  "sequence_time_equals_source_pts": true,
+  "camera_model": "fixed position; independent pitch/yaw/focal at observed keys; roll=0",
+  "unreal_import": "location_cm and rotation_deg are direct UE world units/Rotator. Filmback36x20.25mm. Key focal_length_mm, not FOV.",
+  "interpolation_status": "Between keys is an unmeasured interpolation; do not extrapolate beyond observed span as validated",
+  "limitations": [
+    "Absolute scale, physical lens, and camera position are not identified uniquely",
+    "Entry points are visible road-edge/protrusion proxies, not uniquely established onset of road curvature",
+    "Source pixel measurement uncertainty +-3 to +-5px differs from model residual",
+    "Inspect each key residual; RMS below8px is not a maximum-error guarantee; holdout is edge rows, not unseen temporal frames",
+    "Camera height100cm is an active search bound; terminal slope was bounded"
+  ],
+  "measured_camera_key_span_s": [
+    3.003,
+    12.5125
+  ],
+  "tail_status": "frames372/384 conditional on visible vehicle bbox;396/408 conditional on clipped visible bbox;418 short extrapolation; no independent static camera calibration"
+}

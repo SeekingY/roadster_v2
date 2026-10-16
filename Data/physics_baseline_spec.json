@@ -1,0 +1,46 @@
+{
+  "status": "scene_built_and_saved_NOT_simulation_validated",
+  "map": "/Game/Maps/Physics_GravityOnly_Baseline",
+  "actor": "Baseline_2000kg_GravityOnly_VISIBLE_PROXY",
+  "gravity_world_cm_s2": [
+    0,
+    0,
+    -980.665
+  ],
+  "mass_kg": 2000.0,
+  "mass_status": "exploratory assumption, not official vehicle mass",
+  "visible_proxy_dimensions_cm": [
+    460.0,
+    200.0,
+    115.0
+  ],
+  "release_center_z_cm": 1000.0,
+  "nominal_initial_velocity_cm_s": [
+    0,
+    0,
+    0
+  ],
+  "linear_damping": 0,
+  "angular_damping": 0,
+  "collision": "engine cube simple collision; native PhysicsActor against BlockAll floor; CCD enabled",
+  "precontact_analytic_reference": "z(t)=1000 - 0.5*980.665*t^2 cm, until bottom face reaches floor",
+  "predicted_first_contact_s_ideal": 1.3864216751996468,
+  "predicted_speed_m_s_ideal": 13.596152121096615,
+  "analytical_values_are_not_measured_chaos_results": true,
+  "trajectory_track": false,
+  "runtime_python": false,
+  "applied_thrust": false,
+  "adhesion": false,
+  "tracking_force": false,
+  "hidden_constraint": false,
+  "reconstruction_claim": false,
+  "solver_timestep": "inherits project defaults; not yet converged or benchmarked",
+  "friction_and_restitution": "engine default materials; not calibrated to Roadster",
+  "validation_pending": [
+    "native Play/Simulate free-fall samples",
+    "compare precontact z(t) with analytic prediction",
+    "check actual gravity direction",
+    "repeat at smaller physical solver step",
+    "check floor contact/penetration and repeatability"
+  ]
+}

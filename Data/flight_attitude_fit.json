@@ -1,0 +1,349 @@
+{
+  "schema_version": 1,
+  "status": "candidate_for_review_not_yet_applied_or_UE_render_validated",
+  "created_utc": "2026-10-16T05:25:08.144667+00:00",
+  "source_csv": "Data/trajectory_fit.csv",
+  "source_csv_sha256": "4963c06a5d6b06cd73836d4848abb29c92bf84a414efb2056efeacffedd3942c",
+  "candidate_csv": "research/trajectory_orientation_candidate.csv",
+  "candidate_csv_sha256": "3a4cbb820791c024798b0759d24deef682fd256aefaeb5a5e78aa032127ef246",
+  "solver": "research/fit_flight_orientation_candidate.py",
+  "solver_sha256": "03bc298c5dc94d40433964a28d6bda405e458ea1b226afd8819160e2655197a3",
+  "geometry_file": "research\\vehicle_vertices_candidate2.json",
+  "geometry_sha256": "1dd7c3b516b39ac4e89a737159897f95ee7d50e476476ee6580044e031e4fbd0",
+  "camera_file": "Data/camera_fit_keys.json",
+  "camera_sha256": "0d8b243dd83581a6dfcc39504eccbe4c5c2079520d53bc6191e2095bcef71362",
+  "candidate_original_columns_changed": [
+    "pitch_deg_unwrapped",
+    "roll_deg_unwrapped",
+    "yaw_deg_unwrapped"
+  ],
+  "candidate_changed_frame_range": [
+    229,
+    264
+  ],
+  "production_data_modified_by_solver": false,
+  "all_original_columns_frames0_through228_unchanged": true,
+  "all_original_columns_frames265_onwards_unchanged": true,
+  "all_positions_wheel_rotation_camera_geometry_and_scales_unchanged": true,
+  "training_frames": [
+    234,
+    240,
+    252
+  ],
+  "training_observations": "234/240/252 manual bbox;240 source mask convex support only. Frame252 mask remains excluded; no dark outline was invented.",
+  "withheld_pixel_frames": [
+    246,
+    258,
+    264
+  ],
+  "withheld264_caveat": "Frame264 pixels are excluded from the objective, but its pose is inherited as an endpoint prior. Earlier QA viewed frame264. This is not a blind or fully unconstrained holdout.",
+  "C1_analytic_boundary_conditions": {
+    "start_frame": 228,
+    "end_frame": 264,
+    "start_value": [
+      163.91228755878697,
+      -0.0,
+      -0.0
+    ],
+    "end_value": [
+      180.0,
+      -180.0,
+      0.0
+    ],
+    "start_derivative_deg_per_frame": [
+      0.12691536539932713,
+      -8.152934393375662e-05,
+      -2.4556319906667515e-05
+    ],
+    "end_derivative_deg_per_frame": [
+      -2.565570866863709e-05,
+      -5.735870445278124e-05,
+      -1.232212235791358e-06
+    ],
+    "required_start_pitch_derivative_deg_per_frame": 0.12688727202191785,
+    "required_end_all_derivatives": 0.0,
+    "roll_monotone": true,
+    "maximum_abs_yaw_deg": 18.11376137838172
+  },
+  "C1_playback_limit": "The analytic attitude curve is C1 at frame228/264. The CSV contains integer-frame samples only. If imported with LINEAR interpolation, continuous-time first derivatives are piecewise constant and not strictly C1; sampled boundary deltas are reported below. Do not claim exact C1 playback without importing analytic tangents or separately validating the interpolation.",
+  "sampled_euler_delta_deg_per_frame": {
+    "228": [
+      0.12688727202191785,
+      0.0,
+      0.0
+    ],
+    "229": [
+      0.37240101042482365,
+      -0.7711566543281237,
+      -0.2318810824096583
+    ],
+    "230": [
+      0.7375510669187406,
+      -2.145938323482341,
+      -0.6423722436216067
+    ],
+    "263": [
+      -0.5173051331543661,
+      -1.5120168281707151,
+      0.09456739461579237
+    ],
+    "264": [
+      -0.21807811841824787,
+      -0.5426912728168816,
+      0.007787237176028769
+    ],
+    "265": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "fitted_parameters": [
+    105.6626167441611,
+    4.929430021793776e-13,
+    4.351564518159132,
+    1.6008992874110113,
+    17.560058228477192,
+    -29.000906050518946,
+    29.999999999999346
+  ],
+  "method": "Joint seven-parameter continuous Euler attitude. Monotone quintic Bezier roll0 to-180 with zero endpoint rate; Hermite pitch matches pre-window pitch/rate and fixed end pitch/rate; bounded smooth yaw vanishes with zero rate at endpoints. Fixed per-frame positions, cameras and one 3D vertex set. Least-squares manual bbox plus frame240 convex support and smoothness priors.",
+  "diagnostics_only": [
+    {
+      "frame": 234,
+      "training": true,
+      "old_attitude_pitch_roll_yaw_deg": [
+        165.1039699618398,
+        -13.333333333333453,
+        0.0
+      ],
+      "candidate_attitude_pitch_roll_yaw_deg": [
+        169.05512638857292,
+        -20.9843010694767,
+        -6.081594115886903
+      ],
+      "source_bbox_center_size": [
+        885.0,
+        123.0,
+        104.0,
+        120.0
+      ],
+      "before_projected_bbox": [
+        887.9646832761593,
+        124.75638611295034,
+        140.3619516094717,
+        119.13933482933896
+      ],
+      "after_projected_bbox": [
+        886.7170700789673,
+        125.01304014864655,
+        128.61023088531795,
+        123.0937027950722
+      ],
+      "before_center_error_px": 3.4459017841058275,
+      "after_center_error_px": 2.6458760923647855
+    },
+    {
+      "frame": 240,
+      "training": true,
+      "old_attitude_pitch_roll_yaw_deg": [
+        168.08317596947182,
+        -46.66666666666676,
+        0.0
+      ],
+      "candidate_attitude_pitch_roll_yaw_deg": [
+        173.318169027799,
+        -60.32721814527077,
+        -15.175473182202744
+      ],
+      "source_bbox_center_size": [
+        940.5,
+        232.0,
+        81.0,
+        134.0
+      ],
+      "before_projected_bbox": [
+        942.8169190764522,
+        233.30522144036715,
+        114.88559209070183,
+        126.66142571329448
+      ],
+      "after_projected_bbox": [
+        941.6631178245689,
+        229.10478289313275,
+        84.44081835824954,
+        132.27341551297405
+      ],
+      "before_center_error_px": 2.659270015478367,
+      "after_center_error_px": 3.1201162109329506,
+      "before_projected_convex_hull_vs_source_iou_NOT_ACTUAL_RENDER": 0.4528274458496875,
+      "after_projected_convex_hull_vs_source_iou_NOT_ACTUAL_RENDER": 0.5850385776585039
+    },
+    {
+      "frame": 246,
+      "training": false,
+      "old_attitude_pitch_roll_yaw_deg": [
+        171.95614377939347,
+        -90.0,
+        0.0
+      ],
+      "candidate_attitude_pitch_roll_yaw_deg": [
+        176.87870102165124,
+        -99.78913546511214,
+        -17.914036626836925
+      ],
+      "source_bbox_center_size": [
+        967.5,
+        347.0,
+        67.0,
+        122.0
+      ],
+      "before_projected_bbox": [
+        973.833170750987,
+        343.2373514059235,
+        88.30141869615204,
+        125.39754302765704
+      ],
+      "after_projected_bbox": [
+        974.7940675264906,
+        337.1693739584036,
+        63.452425011599075,
+        121.4566785938124
+      ],
+      "before_center_error_px": 7.366585111411102,
+      "after_center_error_px": 12.241104094431941
+    },
+    {
+      "frame": 252,
+      "training": true,
+      "old_attitude_pitch_roll_yaw_deg": [
+        175.82911158931515,
+        -133.3333333333335,
+        0.0
+      ],
+      "candidate_attitude_pitch_roll_yaw_deg": [
+        181.56901064154522,
+        -135.14203296009163,
+        -11.690722923349224
+      ],
+      "source_bbox_center_size": [
+        988.5,
+        463.5,
+        103.0,
+        99.0
+      ],
+      "before_projected_bbox": [
+        989.9415308375594,
+        464.1632675091372,
+        119.50283684838712,
+        106.36471176253008
+      ],
+      "after_projected_bbox": [
+        989.7717989814686,
+        463.12878433970656,
+        102.05358368659495,
+        99.01633358966899
+      ],
+      "before_center_error_px": 1.5868002219283326,
+      "after_center_error_px": 1.3248674332594979
+    },
+    {
+      "frame": 258,
+      "training": false,
+      "old_attitude_pitch_roll_yaw_deg": [
+        178.8083175969472,
+        -166.6666666666667,
+        0.0
+      ],
+      "candidate_attitude_pitch_roll_yaw_deg": [
+        182.99532274138954,
+        -165.0583751435555,
+        -2.604544711544991
+      ],
+      "source_bbox_center_size": [
+        1003.0,
+        562.5,
+        138.0,
+        67.0
+      ],
+      "before_projected_bbox": [
+        1004.1556889308147,
+        562.667036365521,
+        144.8710271062631,
+        81.92550115819586
+      ],
+      "after_projected_bbox": [
+        1002.7773142853164,
+        563.0861247124262,
+        140.157663178623,
+        75.73979034254978
+      ],
+      "before_center_error_px": 1.1676977572188898,
+      "after_center_error_px": 0.627001679456189
+    },
+    {
+      "frame": 264,
+      "training": false,
+      "old_attitude_pitch_roll_yaw_deg": [
+        180.0,
+        -180.0,
+        0.0
+      ],
+      "candidate_attitude_pitch_roll_yaw_deg": [
+        180.0,
+        -180.0,
+        0.0
+      ],
+      "source_bbox_center_size": [
+        1005.5,
+        671.0,
+        153.0,
+        60.0
+      ],
+      "before_projected_bbox": [
+        1006.2358770603721,
+        670.3679676400152,
+        162.94017488560985,
+        63.62477775955688
+      ],
+      "after_projected_bbox": [
+        1006.2358770603721,
+        670.3679676400152,
+        162.94017488560985,
+        63.62477775955688
+      ],
+      "before_center_error_px": 0.9700412115213722,
+      "after_center_error_px": 0.9700412115213722,
+      "before_projected_convex_hull_vs_source_iou_NOT_ACTUAL_RENDER": 0.8413981690643205,
+      "after_projected_convex_hull_vs_source_iou_NOT_ACTUAL_RENDER": 0.8413981690643205,
+      "heldout_limitation": "Pixels excluded from objective; endpoint pose fixed to prior trajectory, so this is a restricted endpoint check, not a fully independent pose holdout."
+    }
+  ],
+  "diagnostic_status": "Projected 3D convex hull against original pixels, with fixed camera and no registration. These values are NOT actual rendered silhouette IoU, NOT a 0.90 pass, and cannot replace final Unreal mask metrics.",
+  "known_tradeoff": "Frame246 held-out projected center error grows from7.37 to12.24px; position was deliberately retained. Frame234 remains too wide. Frame264 is identical before/after on this new geometry.",
+  "validation_required": [
+    "Candidate2 actual geometry/candidate trajectory intersection check across837 integer/half-frame samples",
+    "Actual UE mask rerender with exact source-frame pairing",
+    "Fresh silhouette IoU and sparse center measurements; retain failures",
+    "Runtime package/control regression after final rebuild"
+  ],
+  "interpretation": "Image-conditioned non-unique attitude hypothesis, not measured true yaw/roll/pitch or force dynamics.",
+  "promotion": {
+    "status": "applied; pending native render measurement",
+    "applied_utc": "2026-10-16T05:26:45.924274+00:00",
+    "original_sha256": "4963c06a5d6b06cd73836d4848abb29c92bf84a414efb2056efeacffedd3942c",
+    "applied_sha256": "3a4cbb820791c024798b0759d24deef682fd256aefaeb5a5e78aa032127ef246",
+    "changed_fields": [
+      "pitch_deg_unwrapped",
+      "roll_deg_unwrapped",
+      "yaw_deg_unwrapped"
+    ],
+    "changed_frame_interval": [
+      229,
+      263
+    ],
+    "xyz_and_wheel_rotation_all_frames_unchanged": true,
+    "contact0_228_all_original_columns_unchanged": true,
+    "clearance_candidate_report_sha256": "a2b947515f2e6e64b06b8ce411a11d31065cf766a81eca4ea76bf16ea87bd47f"
+  }
+}

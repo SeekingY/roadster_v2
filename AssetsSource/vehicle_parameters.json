@@ -1,0 +1,16 @@
+{
+  "status": "nominal modelling inputs BEFORE local clearance adjustment; length_cm460 is base design input, final actual extent is vehicle_manifest.vehicle_bounds_cm",
+  "length_cm": 460.0,
+  "width_cm": 200.0,
+  "height_cm": 115.0,
+  "wheelbase_cm": 275.0,
+  "front_track_cm": 168.0,
+  "rear_track_cm": 170.0,
+  "front_tire_radius_cm": 36.0,
+  "rear_tire_radius_cm": 36.0,
+  "front_tire_width_cm": 27.0,
+  "rear_tire_width_cm": 30.0,
+  "body_clearance_cm": 17.0,
+  "clearance_adjustment": "Data/vehicle_clearance_adjustment.json",
+  "nominal_length_before_clearance_cm": 460.0
+}

@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "status": "monocular_static_contour_fit_estimate",
+  "units": "centimeters",
+  "coordinate_convention": {
+    "+X": "initial direction of travel toward ramp",
+    "+Y": "vehicle right",
+    "+Z": "world up"
+  },
+  "source_footage": "https://www.youtube.com/watch?v=7p5LxFdc-Qg",
+  "source_geometry_evidence": "Open-ended rising ribbon with backward-curving upper section; gray road; white centerline; illuminated edges; rear steel truss. Visually reviewed fresh sequential screenshots.",
+  "absolute_scale_status": "unknown; not independently calibrated",
+  "width_cm": 360,
+  "width_basis": "hypothesis 1.8 times graybox vehicle width of 200cm; perspective not calibrated",
+  "surface_thickness_cm": 20,
+  "surface_thickness_status": "assumption",
+  "target_height_cm": 2008.6320000000003,
+  "height_basis": "Unverified soft constraint from old official broadcast overlay showing 65.9ft; telemetry datum and synchronization unknown",
+  "terminal_tangent_deg": 163.99850091153553,
+  "terminal_tangent_basis": "estimated fitted tangent; upper slope reached optimization search bound; not measured vehicle pitch",
+  "is_closed": false,
+  "profile_type": "three planar cubic Bezier segments; variable curvature; tangent-continuous joins",
+  "control_points_status": "numerically fitted global 3D Bezier profile with fixed assumed scale; not independently measured dimensions",
+  "source_soft_anchors": [
+    {
+      "pitch_deg": 0,
+      "overlay_altitude_ft": 0,
+      "status": "visible_broadcast_overlay_not_independent_measurement"
+    },
+    {
+      "pitch_deg": 57.3,
+      "overlay_altitude_ft": 12.8,
+      "status": "visible_broadcast_overlay_not_independent_measurement"
+    },
+    {
+      "pitch_deg": 109,
+      "overlay_altitude_ft": 39.8,
+      "status": "visible_broadcast_overlay_not_independent_measurement"
+    },
+    {
+      "pitch_deg": 170,
+      "overlay_altitude_ft": 65.9,
+      "status": "visible_broadcast_overlay_not_independent_measurement"
+    }
+  ],
+  "segments": [
+    {
+      "index": 0,
+      "p0_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p1_cm": [
+        234.22541872463566,
+        0.0,
+        0.0
+      ],
+      "p2_cm": [
+        380.499344600586,
+        0.0,
+        147.00873394816156
+      ],
+      "p3_cm": [
+        517.3712552244574,
+        0.0,
+        390.144
+      ],
+      "endpoint_tangent_deg": [
+        0.0,
+        60.622858831991664
+      ],
+      "status": "estimated_from_monocular_static_contour_with_assumed_width_and_height"
+    },
+    {
+      "index": 1,
+      "p0_cm": [
+        517.3712552244574,
+        0.0,
+        390.144
+      ],
+      "p1_cm": [
+        655.1509291026557,
+        0.0,
+        634.8917901946437
+      ],
+      "p2_cm": [
+        573.7248227698301,
+        0.0,
+        938.1062377241976
+      ],
+      "p3_cm": [
+        541.6366537992847,
+        0.0,
+        1213.104
+      ],
+      "endpoint_tangent_deg": [
+        60.622858831991664,
+        96.65547268265755
+      ],
+      "status": "estimated_from_monocular_static_contour_with_assumed_width_and_height"
+    },
+    {
+      "index": 2,
+      "p0_cm": [
+        541.6366537992847,
+        0.0,
+        1213.104
+      ],
+      "p1_cm": [
+        493.2403200286101,
+        0.0,
+        1627.8638294407176
+      ],
+      "p2_cm": [
+        -465.0761498433214,
+        0.0,
+        1932.4597381211934
+      ],
+      "p3_cm": [
+        -730.694166899543,
+        0.0,
+        2008.632
+      ],
+      "endpoint_tangent_deg": [
+        96.65547268265755,
+        163.99850091153553
+      ],
+      "status": "estimated_from_monocular_static_contour_with_assumed_width_and_height"
+    }
+  ],
+  "sample_points_csv": "camera_fit_ramp_points.csv",
+  "recommended_exploration_ranges_not_confidence_intervals": {
+    "height_cm": [
+      1600,
+      2400
+    ],
+    "width_cm": [
+      320,
+      440
+    ],
+    "terminal_tangent_deg": [
+      150,
+      180
+    ]
+  },
+  "unsupported_claims": [
+    "True ramp dimensions recovered",
+    "Circle or semicircle confirmed",
+    "Real vehicle speed or trajectory fitted",
+    "Exact source timestamp of telemetry established"
+  ],
+  "animation_time_data_included": false,
+  "camera_fit_provenance": {
+    "report": "Data/camera_fit_all_static.json",
+    "before": "Data/camera_fit_ramp_before.json",
+    "source_frame": 144,
+    "pts_time_s": 6.006,
+    "scale_status": "width360cm and height2008.632cm remain assumptions",
+    "landmark_rms_px": 4.960408575972635,
+    "landmark_max_px": 8.440711042070983,
+    "heldout_edge_rms_px": 5.31525767295764,
+    "bound_hits": [
+      "camera height100cm",
+      "terminal slope bounded in search"
+    ],
+    "not_a_physical_calibration": true
+  }
+}

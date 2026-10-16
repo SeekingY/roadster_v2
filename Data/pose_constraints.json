@@ -1,0 +1,70 @@
+{
+  "status": "visual_constraints_and_explicit_graybox_hypotheses",
+  "source": "https://x.com/Tesla/status/2110913438293647789",
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "time_base": "1/2400000",
+  "nominal_frame_rate": "24000/1001",
+  "native_pts_log": "research\\ramp_source_allframe_pts.log",
+  "motion_segment": {
+    "source_pts_s": [
+      2.127125,
+      17.475791667
+    ],
+    "source_frames_inclusive": [
+      51,
+      418
+    ],
+    "note": "first wide take only; continuous through landing/driveaway; later takes replay maneuver"
+  },
+  "exit_forward_hypothesis": [
+    -0.984807753,
+    0,
+    0.173648178
+  ],
+  "exit_forward_basis": "terminal 170 degree pitch soft assumption; camera/metric pose not solved",
+  "recovery_rotation": {
+    "axis": "vehicle longitudinal forward axis",
+    "angle_deg_hypothesis": 180,
+    "sign": "UE mathematical sign unresolved",
+    "observed_screen_direction": "clockwise when seen from front in close low-angle shot C",
+    "direction_evidence_frames": [
+      420,
+      432,
+      444,
+      456,
+      468,
+      480
+    ],
+    "direction_basis": "track the two endpoints of white front light bar; it turns clockwise through near-vertical before leveling",
+    "source_frame_interval": [
+      234,
+      264
+    ],
+    "source_pts_s": [
+      9.75975,
+      11.011
+    ],
+    "evidence": "front direction persists while roof-side-underbody visibility changes; then wheels-down",
+    "avoid": "Do not linearly interpolate Euler pitch170 to0 and reverse the vehicle heading"
+  },
+  "touchdown": {
+    "frame": "unknown",
+    "pts_s": "unknown",
+    "cause": "dense white cloud hides initial tire contact"
+  },
+  "camera": {
+    "constant_camera_valid": false,
+    "focal_length": "unknown",
+    "pose": "unknown",
+    "evidence": "ramp endpoint pixels and projected height change continuously from frame72 through216"
+  },
+  "metrics": {
+    "IoU": "not_computed",
+    "reprojection_error": "not_computed",
+    "pose_error": "not_computed"
+  },
+  "image_metrics_warning": "Black background dominates full-frame SSIM. Score ramp/car masks and visible landmarks separately. Use occlusion masks and explicit reviewed frames."
+}

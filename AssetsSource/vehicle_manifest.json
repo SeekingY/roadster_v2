@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "blender_version": "4.2.0",
+  "status": "editable exterior silhouette blockout; not precision asset, not official CAD",
+  "parameters": {
+    "status": "nominal modelling inputs BEFORE local clearance adjustment; length_cm460 is base design input, final actual extent is vehicle_manifest.vehicle_bounds_cm",
+    "length_cm": 460.0,
+    "width_cm": 200.0,
+    "height_cm": 115.0,
+    "wheelbase_cm": 275.0,
+    "front_track_cm": 168.0,
+    "rear_track_cm": 170.0,
+    "front_tire_radius_cm": 36.0,
+    "rear_tire_radius_cm": 36.0,
+    "front_tire_width_cm": 27.0,
+    "rear_tire_width_cm": 30.0,
+    "body_clearance_cm": 17.0,
+    "clearance_adjustment": "Data/vehicle_clearance_adjustment.json",
+    "nominal_length_before_clearance_cm": 460.0
+  },
+  "source_coordinates": "centimeters; +X front +Y left +Z up",
+  "unreal_coordinates": "centimeters; +X front +Y right +Z up",
+  "source_to_unreal_position": "[x, -y, z]",
+  "vehicle_bounds_cm": {
+    "min_cm": [
+      -211.73333740234375,
+      -100.94999694824219,
+      0.0
+    ],
+    "max_cm": [
+      210.61904907226562,
+      100.94999694824219,
+      115.0
+    ],
+    "size_cm": [
+      422.3523864746094,
+      201.89999389648438,
+      115.0
+    ]
+  },
+  "wheel_centers": {
+    "FL": {
+      "blender_cm": [
+        137.5,
+        84.0,
+        36.0
+      ],
+      "unreal_cm": [
+        137.5,
+        -84.0,
+        36.0
+      ],
+      "radius_cm": 36.0,
+      "width_cm": 27.0
+    },
+    "FR": {
+      "blender_cm": [
+        137.5,
+        -84.0,
+        36.0
+      ],
+      "unreal_cm": [
+        137.5,
+        84.0,
+        36.0
+      ],
+      "radius_cm": 36.0,
+      "width_cm": 27.0
+    },
+    "RL": {
+      "blender_cm": [
+        -137.5,
+        85.0,
+        36.0
+      ],
+      "unreal_cm": [
+        -137.5,
+        -85.0,
+        36.0
+      ],
+      "radius_cm": 36.0,
+      "width_cm": 30.0
+    },
+    "RR": {
+      "blender_cm": [
+        -137.5,
+        -85.0,
+        36.0
+      ],
+      "unreal_cm": [
+        -137.5,
+        85.0,
+        36.0
+      ],
+      "radius_cm": 36.0,
+      "width_cm": 30.0
+    }
+  },
+  "parameter_semantics": "parameters describe nominal design inputs before the explicitly recorded clearance correction; vehicle_bounds_cm is actual exported geometry",
+  "clearance_adjustment": {
+    "enabled": true,
+    "status": "scene-consistency hypothesis; not Tesla dimensions; selected candidate2",
+    "config_file": "Data\\vehicle_clearance_adjustment.json",
+    "config_sha256": "d7be6b3bfc0f86c1f9e8048503754f1e53f70875530900f54a5db9c9e9acef8f",
+    "nominal_parameters_meaning": "design inputs before local overhang/body-floor repair; actual final dimensions are measured vehicle_bounds_cm",
+    "anchor_cm": 177.5,
+    "nominal_tip_before_cm": 230.0,
+    "nominal_tip_after_cm": 210.0,
+    "rear_circle_and_diffuser_rigid_z_shift_cm": 1.4719384766761507,
+    "front_lip_rigid_z_shift_cm": 8.292122250863631,
+    "plate_rigid_z_shift_cm": 0.0,
+    "changed_objects": {
+      "Body_Sculpted_Wedge": {
+        "max_abs_x_change_cm": 20.0,
+        "max_local_z_raise_cm": 7.091882705688477,
+        "rigid_z_translation": false
+      },
+      "Front_Dark_Mask": {
+        "max_abs_x_change_cm": 20.380950927734375,
+        "max_local_z_raise_cm": 5.226106643676758,
+        "rigid_z_translation": false
+      },
+      "Front_Lower_Lip": {
+        "max_abs_x_change_cm": 19.809524536132812,
+        "max_local_z_raise_cm": 8.292123794555664,
+        "rigid_z_translation": true
+      },
+      "Left_Recessed_Headlight": {
+        "max_abs_x_change_cm": 13.924728393554688,
+        "max_local_z_raise_cm": 0.0,
+        "rigid_z_translation": false
+      },
+      "Right_Recessed_Headlight": {
+        "max_abs_x_change_cm": 13.924728393554688,
+        "max_local_z_raise_cm": 0.0,
+        "rigid_z_translation": false
+      },
+      "Rear_Light_Black_Housing": {
+        "max_abs_x_change_cm": 20.838088989257812,
+        "max_local_z_raise_cm": 0.0,
+        "rigid_z_translation": false
+      },
+      "Full_Width_Red_Taillight": {
+        "max_abs_x_change_cm": 21.047622680664062,
+        "max_local_z_raise_cm": 0.0,
+        "rigid_z_translation": false
+      },
+      "Rear_Upper_Integrated_Lip": {
+        "max_abs_x_change_cm": 20.380950927734375,
+        "max_local_z_raise_cm": 0.0,
+        "rigid_z_translation": false
+      },
+      "Rear_Lower_Shadow_Face": {
+        "max_abs_x_change_cm": 20.571426391601562,
+        "max_local_z_raise_cm": 3.2869491577148438,
+        "rigid_z_translation": false
+      },
+      "Rear_Plate_RDSTR": {
+        "max_abs_x_change_cm": 21.066665649414062,
+        "max_local_z_raise_cm": 0.0,
+        "rigid_z_translation": true
+      },
+      "Rear_Visible_Circular_Aperture_1_Thin_Lip": {
+        "max_abs_x_change_cm": 20.5333251953125,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Visible_Circular_Aperture_1_Dark_Inner_Wall": {
+        "max_abs_x_change_cm": 20.5333251953125,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Visible_Circular_Aperture_1_Black_Opening": {
+        "max_abs_x_change_cm": 20.399993896484375,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Visible_Circular_Aperture_2_Thin_Lip": {
+        "max_abs_x_change_cm": 20.5333251953125,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Visible_Circular_Aperture_2_Dark_Inner_Wall": {
+        "max_abs_x_change_cm": 20.5333251953125,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Visible_Circular_Aperture_2_Black_Opening": {
+        "max_abs_x_change_cm": 20.399993896484375,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Visible_Circular_Aperture_3_Thin_Lip": {
+        "max_abs_x_change_cm": 20.5333251953125,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Visible_Circular_Aperture_3_Dark_Inner_Wall": {
+        "max_abs_x_change_cm": 20.5333251953125,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Visible_Circular_Aperture_3_Black_Opening": {
+        "max_abs_x_change_cm": 20.399993896484375,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Visible_Circular_Aperture_4_Thin_Lip": {
+        "max_abs_x_change_cm": 20.5333251953125,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Visible_Circular_Aperture_4_Dark_Inner_Wall": {
+        "max_abs_x_change_cm": 20.5333251953125,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Visible_Circular_Aperture_4_Black_Opening": {
+        "max_abs_x_change_cm": 20.399993896484375,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Diffuser_Upper_Boundary": {
+        "max_abs_x_change_cm": 20.533340454101562,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Diffuser_Lower_Boundary": {
+        "max_abs_x_change_cm": 20.457138061523438,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Diffuser_Dark_Opening": {
+        "max_abs_x_change_cm": 20.426666259765625,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Diffuser_Right_Boundary": {
+        "max_abs_x_change_cm": 20.457138061523438,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Diffuser_Left_Boundary": {
+        "max_abs_x_change_cm": 20.457138061523438,
+        "max_local_z_raise_cm": 1.4719390869140625,
+        "rigid_z_translation": true
+      },
+      "Rear_Outer_Right_Dark_Cheek": {
+        "max_abs_x_change_cm": 20.457138061523438,
+        "max_local_z_raise_cm": 0.6219367980957031,
+        "rigid_z_translation": false
+      },
+      "Rear_Outer_Left_Dark_Cheek": {
+        "max_abs_x_change_cm": 20.457138061523438,
+        "max_local_z_raise_cm": 0.6219367980957031,
+        "rigid_z_translation": false
+      },
+      "Plate_RDSTR_Dark_Letter_Inlay": {
+        "max_abs_x_change_cm": 20.990478515625,
+        "max_local_z_raise_cm": 0.0,
+        "rigid_z_translation": false
+      },
+      "Unmeasured_Simplified_Undertray": {
+        "max_abs_x_change_cm": 12.0,
+        "max_local_z_raise_cm": 8.59365463256836,
+        "rigid_z_translation": false
+      }
+    },
+    "max_body_vertex_z_raise_cm": 8.59365463256836,
+    "unchanged": "wheel meshes/centers/radius, wheelbase, high canopy, trajectory and ramp",
+    "not_measured": "No claim that shortened body dimensions or reshaped underside are official Tesla geometry"
+  },
+  "unreal_fbx_import": {
+    "convert_scene": false,
+    "convert_scene_unit": true,
+    "force_front_x_axis": false,
+    "import_uniform_scale": 1.0,
+    "import_rotation": "0,0,0",
+    "combine_meshes": true,
+    "transform_vertex_to_absolute": true,
+    "auto_generate_collision": false,
+    "import_materials": false,
+    "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS"
+  },
+  "parts": {
+    "body": {
+      "file": "FBX/SM_Roadster_Blockout_Body.fbx",
+      "vertices": 4328,
+      "triangles": 7434,
+      "material_slots": [
+        "M_Blockout_Silver",
+        "M_Blockout_DarkTrim",
+        "M_Blockout_BlackGlass",
+        "M_Blockout_Headlight",
+        "M_Blockout_RedTail",
+        "M_Blockout_Rim",
+        "M_Blockout_Tire"
+      ],
+      "bounds_local_cm": {
+        "min_cm": [
+          -211.73333740234375,
+          -99.99954223632812,
+          17.0
+        ],
+        "max_cm": [
+          210.61904907226562,
+          99.99954986572266,
+          115.0
+        ],
+        "size_cm": [
+          422.3523864746094,
+          199.99909210205078,
+          98.0
+        ]
+      },
+      "pivot_source_cm": [
+        0,
+        0,
+        0
+      ],
+      "sha256": "aff763f093f5cf295298ccef5869e9639543b2cd7a37ef6c0edc9ea9ed42fde4",
+      "bytes": 562140
+    },
+    "FL": {
+      "file": "FBX/SM_Roadster_Wheel_FL.fbx",
+      "vertices": 1400,
+      "triangles": 1724,
+      "material_slots": [
+        "M_Blockout_Tire",
+        "M_Blockout_Rim",
+        "M_Blockout_DarkTrim"
+      ],
+      "bounds_local_cm": {
+        "min_cm": [
+          -36.0,
+          -13.5,
+          -36.0
+        ],
+        "max_cm": [
+          36.0,
+          14.449999809265137,
+          36.0
+        ],
+        "size_cm": [
+          72.0,
+          27.949999809265137,
+          72.0
+        ]
+      },
+      "pivot_source_cm": [
+        137.5,
+        84.0,
+        36.0
+      ],
+      "sha256": "ce5697e4a1e6dd96d4917eb673ebb6dd954cf4331339d25a13888c5c0597e7b2",
+      "bytes": 126012
+    },
+    "FR": {
+      "file": "FBX/SM_Roadster_Wheel_FR.fbx",
+      "vertices": 1400,
+      "triangles": 1724,
+      "material_slots": [
+        "M_Blockout_Tire",
+        "M_Blockout_Rim",
+        "M_Blockout_DarkTrim"
+      ],
+      "bounds_local_cm": {
+        "min_cm": [
+          -36.0,
+          -14.449999809265137,
+          -36.0
+        ],
+        "max_cm": [
+          36.0,
+          13.5,
+          36.0
+        ],
+        "size_cm": [
+          72.0,
+          27.949999809265137,
+          72.0
+        ]
+      },
+      "pivot_source_cm": [
+        137.5,
+        -84.0,
+        36.0
+      ],
+      "sha256": "10d650a1ced9af1723360a4e7013cbc5e79dbe33bab31b498f268f7ae72478e4",
+      "bytes": 125068
+    },
+    "RL": {
+      "file": "FBX/SM_Roadster_Wheel_RL.fbx",
+      "vertices": 1400,
+      "triangles": 1724,
+      "material_slots": [
+        "M_Blockout_Tire",
+        "M_Blockout_Rim",
+        "M_Blockout_DarkTrim"
+      ],
+      "bounds_local_cm": {
+        "min_cm": [
+          -36.0,
+          -15.0,
+          -36.0
+        ],
+        "max_cm": [
+          36.0,
+          15.949999809265137,
+          36.0
+        ],
+        "size_cm": [
+          72.0,
+          30.949999809265137,
+          72.0
+        ]
+      },
+      "pivot_source_cm": [
+        -137.5,
+        85.0,
+        36.0
+      ],
+      "sha256": "da6f14385420ea53faecb1de91709cfa71a15b3599e7697e392a5f68a29c2e7f",
+      "bytes": 124716
+    },
+    "RR": {
+      "file": "FBX/SM_Roadster_Wheel_RR.fbx",
+      "vertices": 1400,
+      "triangles": 1724,
+      "material_slots": [
+        "M_Blockout_Tire",
+        "M_Blockout_Rim",
+        "M_Blockout_DarkTrim"
+      ],
+      "bounds_local_cm": {
+        "min_cm": [
+          -36.0,
+          -15.949999809265137,
+          -36.0
+        ],
+        "max_cm": [
+          36.0,
+          15.0,
+          36.0
+        ],
+        "size_cm": [
+          72.0,
+          30.949999809265137,
+          72.0
+        ]
+      },
+      "pivot_source_cm": [
+        -137.5,
+        -85.0,
+        36.0
+      ],
+      "sha256": "901b932d370657da601e62a0bdb6a932b9bc74224896628271583562e1ac7792",
+      "bytes": 126124
+    }
+  },
+  "render_device": "CPU only; 4 threads; previews if --preview",
+  "notes": [
+    "body origin: assumed wheelbase midpoint on ground, not measured center of mass",
+    "wheel files: origin at own axle center; place using unreal_cm offsets",
+    "wheel spin axis is local Y after import; validate sign with forward travel",
+    "no animation, fans, plumbing, interior, or physical claims generated; four rear circular apertures are visual observations only",
+    "rear plate RDSTR, aperture lips, dark diffuser perimeter and wheel discs are observed appearance details; candidate2 overhang correction changes the previous outer envelope",
+    "underside uses dark material slots and approximate panel seams; local floor correction is an explicit scene-consistency hypothesis, not measured mechanics",
+    "body FBX includes fixed glazing and lights using editable material slots",
+    "FBX axis metadata Y-forward/Z-up with identity export; UE convert_scene intentionally disabled"
+  ]
+}
