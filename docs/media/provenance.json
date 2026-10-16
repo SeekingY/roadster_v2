@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "scope": "Presentation media derived only from the existing authored Unreal-rendered videos in this repository. Paths are repository-relative.",
+  "original_evaluated_build_manifest_sha256": "f404e1e457b1ffa899d241a53677b7a7cf7e3b9fb54845a506615178bb710c49",
+  "source_frame_rate": [
+    24000,
+    1001
+  ],
+  "source_files": [
+    {
+      "path": "Renders/Reference_Replay_1080.mp4",
+      "bytes": 1822201,
+      "sha256": "09d8e70a1b579db1cfc797bfe1858c12b3158fa40891b0fa66f35b24ccec0271"
+    },
+    {
+      "path": "Renders/Inspection_3D.mp4",
+      "bytes": 1872542,
+      "sha256": "9278c01db8adc2d42946a3cbf9c8bca4f5d66c6bd4bea44b212e625bb384bae5"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "docs/media/cover.jpg",
+      "bytes": 69708,
+      "sha256": "592e8c9d7ebc0f101832c33ddf11d9662055e0a47470d185b90ee0d7819138ff",
+      "kind": "cover",
+      "full_decode_passed": true,
+      "source_path": "Renders/Reference_Replay_1080.mp4",
+      "source_sha256": "09d8e70a1b579db1cfc797bfe1858c12b3158fa40891b0fa66f35b24ccec0271",
+      "source_frame": 0,
+      "source_pts_s": 0,
+      "processing": "decode exact frame, JPEG q2; no crop, generative changes or overlays",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "frames": 1
+    },
+    {
+      "path": "docs/media/inspection.jpg",
+      "bytes": 26670,
+      "sha256": "4e7e9ad24f914914e16ed4e088a978616d9fd0391eb3c8a38641c1e2c5a06475",
+      "kind": "inspection_still",
+      "full_decode_passed": true,
+      "source_path": "Renders/Inspection_3D.mp4",
+      "source_sha256": "9278c01db8adc2d42946a3cbf9c8bca4f5d66c6bd4bea44b212e625bb384bae5",
+      "source_frame": 264,
+      "source_pts_s": 11.011,
+      "processing": "decode exact frame, JPEG q2; no crop or overlays",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "frames": 1
+    },
+    {
+      "path": "docs/media/preview.gif",
+      "bytes": 4396184,
+      "sha256": "3e2c978707c21aadc51758dcff4d7397fe569666ca2950df0f87bf0936dcd980",
+      "kind": "gif",
+      "full_decode_passed": true,
+      "source_path": "Renders/Inspection_3D.mp4",
+      "source_sha256": "9278c01db8adc2d42946a3cbf9c8bca4f5d66c6bd4bea44b212e625bb384bae5",
+      "source_start_s": 5.005,
+      "source_interval_duration_s": 7.5,
+      "source_frame_rate": [
+        24000,
+        1001
+      ],
+      "nominal_output_rate_fps": 12,
+      "processing": "fps frame selection, uniform scale, palette quantization; no motion interpolation or speed change",
+      "dimensions": [
+        768,
+        432
+      ],
+      "frames": 90,
+      "duration_s": 7.5,
+      "unique_decoded_frames": 90,
+      "role": "Downsampled animated preview; not a frame-accurate QA reference."
+    },
+    {
+      "path": "Renders/Roadster_V2_Showcase.mp4",
+      "bytes": 3381917,
+      "sha256": "bbe2abb77f8f9842473ec6ff9b23f20601494cc26227b12d80e79e265eb17bdb",
+      "kind": "social",
+      "full_decode_passed": true,
+      "segments": [
+        {
+          "source_path": "Renders/Reference_Replay_1080.mp4",
+          "source_sha256": "09d8e70a1b579db1cfc797bfe1858c12b3158fa40891b0fa66f35b24ccec0271",
+          "source_start_frame": 0,
+          "source_end_frame_inclusive": 418,
+          "source_start_pts_s": 0,
+          "source_end_pts_s_exclusive": 17.475791666666666,
+          "output_start_frame": 0,
+          "output_end_frame_inclusive": 418,
+          "output_start_pts_s": 0.0,
+          "output_end_pts_s_exclusive": 17.475791666666666
+        },
+        {
+          "source_path": "Renders/Inspection_3D.mp4",
+          "source_sha256": "9278c01db8adc2d42946a3cbf9c8bca4f5d66c6bd4bea44b212e625bb384bae5",
+          "source_start_frame": 192,
+          "source_end_frame_inclusive": 335,
+          "source_start_pts_s": 8.008,
+          "source_end_pts_s_exclusive": 14.014,
+          "output_start_frame": 419,
+          "output_end_frame_inclusive": 562,
+          "output_start_pts_s": 17.475791666666666,
+          "output_end_pts_s_exclusive": 23.481791666666666
+        }
+      ],
+      "processing": "Concatenate the reference replay and a labelled inspection replay of the same action; add project/disclaimer captions. Uniformly upscale only the inspection segment from 720p to1080p. No crop, optical-flow interpolation, generated imagery or speed change.",
+      "same_event_replay_note": "Inspection is explicitly labelled a replay of the same action, not an additional physical event. Only inspection720p is uniformly upscaled to1080p.",
+      "audio": "silent",
+      "codec": "H264",
+      "pixel_format": "yuv420p",
+      "metadata": {
+        "width": 1920,
+        "height": 1080,
+        "media_timescale": 24000,
+        "duration_ticks": 563563,
+        "duration_s": 23.481791666666666,
+        "frame_count": 563,
+        "time_to_sample": [
+          [
+            563,
+            1001
+          ]
+        ],
+        "fps_exact": [
+          24000,
+          1001
+        ]
+      },
+      "faststart_moov_before_mdat": true,
+      "black_intervals_detected": []
+    }
+  ],
+  "official_reference_media_used": false,
+  "new_Unreal_render_started": false,
+  "new_reconstruction_fidelity_acceptance_performed": false,
+  "composition_limits": [
+    "Reference wide shots deliberately retain the source framing, so the car is small relative to the ramp.",
+    "At9.5s the car approaches the top frame edge and is partially clipped in the supplied reference render; this edit does not crop or repair that source framing.",
+    "Inspection720p is upscaled uniformly to1080p in the social video.",
+    "Gas and vehicle motion remain an authored reconstruction draft; this media pass is not physical validation."
+  ],
+  "time_and_framing_limits": [
+    "The inspection segment repeats part of the same physical action; it is not another event or continuous extension of the reference sequence.",
+    "The GIF uses 12 fps frame selection and palette quantization for display; it is not suitable for exact source-frame or event-timing measurement.",
+    "Full reference framing is retained, including small vehicle scale in wide shots and the existing partial top-edge clipping."
+  ],
+  "media_validation": {
+    "scope": "actual media decode, dimensions, timestamps and visual sampling; not a new reconstruction-fidelity result",
+    "passed": true,
+    "visual_review_status": "completed; actual output JPEGs and GIF decoded samples inspected",
+    "final_showcase_sample_times_s": [
+      0,
+      2.5,
+      6,
+      9.5,
+      11.5,
+      17.3,
+      20
+    ],
+    "additional_pre_caption_wrap_sample_times_s": [
+      10.5,
+      14,
+      17.6,
+      23
+    ],
+    "caption_revision_scope": "Disclaimer wrapped into two shorter lines at bottom left to remove contact with car nose at17.3s; scene pixels and other titles unchanged.",
+    "gif_decoded_frames_reviewed": [
+      0,
+      30,
+      60,
+      89
+    ],
+    "stills_reviewed": [
+      "docs/media/cover.jpg",
+      "docs/media/inspection.jpg"
+    ],
+    "findings": [
+      "Cover uses a clear rear close view and visible ramp context.",
+      "Inspection still shows an oblique front view with the car separated from the ramp.",
+      "GIF visibly changes from climb to departure/roll and descent; 90 unique decoded frames.",
+      "Final sampled captions are readable and do not cover the car.",
+      "Black background is the actual rendered environment, not an inserted black screen."
+    ]
+  },
+  "acceptance_statement": "Decode, dimensions, timing and sampled presentation checks do not establish a new reconstruction-fidelity or vehicle-physics result. Existing silhouette/center metrics and limitations remain unchanged; the project remains an editable reconstruction draft."
+}

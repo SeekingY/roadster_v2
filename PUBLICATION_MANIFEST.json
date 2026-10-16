@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "public_subset_prepared_and_locally_validated; publication is a separate action",
-  "scope": "Portable editable reconstruction draft, authored model sources, parameter data and three Unreal-only previews. No official media or raw local evidence.",
+  "scope": "Portable editable reconstruction draft, authored model sources, parameter data, three original Unreal-only videos and derived presentation stills, GIF and showcase video. No official media or raw local evidence.",
   "source_build_manifest_sha256": "f404e1e457b1ffa899d241a53677b7a7cf7e3b9fb54845a506615178bb710c49",
   "source_build_relationship": "Derived from the frozen local build. Public metadata/privacy/path edits are recorded by per-file hashes. The public copy has not been image-rerendered; original image-fidelity measurements remain limited to that local evaluated build.",
   "entrypoint": "Roadster_Demo_Reconstruction.uproject",
@@ -22,7 +22,8 @@
     "Run entrypoints use configurable dependencies, create local output directories and accept the publication manifest as the initial render freshness baseline.",
     "Encoder handles only authored outputs and requires complete fresh 419-frame sequences; source/comparison video workflow removed.",
     "Authoring scripts generate portable metadata/output paths and disable optional FBX metadata; clearance safety checks retained.",
-    "Git attributes preserve exact input bytes; ignored local execution evidence, caches, dependencies, source media and packages are excluded."
+    "Git attributes preserve exact input bytes; ignored local execution evidence, caches, dependencies, source media and packages are excluded.",
+    "Added presentation stills, a downsampled GIF and a captioned showcase derived only from the unchanged authored videos; source/output hashes and timing are recorded in docs/media/provenance.json. No new Unreal render or reconstruction-fidelity acceptance."
   ],
   "excluded_categories": [
     "official SourceMedia",
@@ -95,8 +96,8 @@
     "high_fidelity_acceptance_passed": false
   },
   "file_manifest_scope": "Explicit publish allowlist below. Excludes this manifest itself and .git; generated ignored files on disk are not release contents.",
-  "file_count_excluding_this_manifest": 112,
-  "total_bytes_excluding_this_manifest": 29383161,
+  "file_count_excluding_this_manifest": 117,
+  "total_bytes_excluding_this_manifest": 37267833,
   "files": [
     {
       "path": ".gitattributes",
@@ -106,8 +107,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 774,
-      "sha256": "e930538578ba4df1dc731227be7f42ffb7db4a30c0dd1703805de0f3d7c5c970",
+      "bytes": 808,
+      "sha256": "629ce6f53b97e353e2b5f195ad212a6f55ccd0b42380106e6f84e3513abe0135",
       "copy_status": "publication_support_file"
     },
     {
@@ -637,8 +638,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4762,
-      "sha256": "f2608e02ad761d0e6304c4ecc5a58dc5dc0e4262584ffe3020dbda311d0e100b",
+      "bytes": 7004,
+      "sha256": "5457a815149576178b26d368c48417b7005d88c27288be9b1c1f3bc69d9ded61",
       "copy_status": "publication_support_file"
     },
     {
@@ -682,6 +683,12 @@
       "sha256": "209b04e345d9c2824e0943a362aa9439e7804b81fc12d7c2ad2fb8e3da102af8",
       "local_source_sha256": "209b04e345d9c2824e0943a362aa9439e7804b81fc12d7c2ad2fb8e3da102af8",
       "copy_status": "unchanged"
+    },
+    {
+      "path": "Renders/Roadster_V2_Showcase.mp4",
+      "bytes": 3381917,
+      "sha256": "bbe2abb77f8f9842473ec6ff9b23f20601494cc26227b12d80e79e265eb17bdb",
+      "copy_status": "derived_from_existing_authored_render"
     },
     {
       "path": "Roadster_Demo_Reconstruction.uproject",
@@ -856,6 +863,30 @@
       "copy_status": "publication_support_file"
     },
     {
+      "path": "docs/media/cover.jpg",
+      "bytes": 69708,
+      "sha256": "592e8c9d7ebc0f101832c33ddf11d9662055e0a47470d185b90ee0d7819138ff",
+      "copy_status": "derived_from_existing_authored_render"
+    },
+    {
+      "path": "docs/media/inspection.jpg",
+      "bytes": 26670,
+      "sha256": "4e7e9ad24f914914e16ed4e088a978616d9fd0391eb3c8a38641c1e2c5a06475",
+      "copy_status": "derived_from_existing_authored_render"
+    },
+    {
+      "path": "docs/media/preview.gif",
+      "bytes": 4396184,
+      "sha256": "3e2c978707c21aadc51758dcff4d7397fe569666ca2950df0f87bf0936dcd980",
+      "copy_status": "derived_from_existing_authored_render"
+    },
+    {
+      "path": "docs/media/provenance.json",
+      "bytes": 7917,
+      "sha256": "341b572e740af39531dc950796467be0d2a7e22029540794973ad9abd1b74cc0",
+      "copy_status": "publication_support_file"
+    },
+    {
       "path": "docs/public_copy.md",
       "bytes": 2542,
       "sha256": "1361dbe745ce4f8da8b90d8e492c44b46cbbab950d2b960923ae734c177f033e",
@@ -873,5 +904,6 @@
       "sha256": "e7b709bb2b020adcd86afd623e0071939808818bb3a4b4c73f838e977c902f6d",
       "copy_status": "publication_support_file"
     }
-  ]
+  ],
+  "presentation_media_provenance": "docs/media/provenance.json"
 }

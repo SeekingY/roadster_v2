@@ -1,6 +1,26 @@
-# roadster_v2
+# ROADSTER V2
 
-**Roadster 跑道演示的可编辑 UE 5.4.3 三维复现初稿 / An editable UE 5.4.3 reconstruction draft of the Roadster ramp demonstration.**
+**坡道、翻转、落地——在 Unreal Engine 里逐帧拆开看。**  
+An editable 3D study of the Roadster ramp demonstration in **Unreal Engine 5.4.3**.
+
+[![Roadster V2 — actual Unreal render of the authored vehicle at the ramp](docs/media/cover.jpg)](Renders/Roadster_V2_Showcase.mp4)
+
+**[▶ 23 秒演示 / Watch the showcase](Renders/Roadster_V2_Showcase.mp4)** · [完整 4K 回放 / Full 4K replay](Renders/Reference_Replay_4K.mp4) · [打开工程 / Get started](#打开--get-started)
+
+> **复现草稿 / Reconstruction draft.** 关键帧回放，车辆动力学未验证；6 个稀疏轮廓样本平均 IoU **0.693**，未达 **0.90**。非官方 CAD。  
+> Keyframed motion; vehicle physics unvalidated. Six-sample silhouette IoU **0.693 / 0.90 target**. Unofficial, independently authored geometry.
+
+## 先看它动起来 / Motion preview
+
+![Animated Unreal inspection view: climb, departure, roll and descent](docs/media/preview.gif)
+
+*7.5 秒真实渲染片段，来自三维检查镜头；保持原速。 / A 7.5-second excerpt from the rendered inspection view, at original speed.*
+
+| 可编辑场景 / Editable scene | 可检查运动 / Inspectable motion | 原创渲染 / Authored renders |
+|---|---|---|
+| 车辆、坡道、材质、相机 / Vehicle, ramp, materials, cameras | 419 帧 · 逐帧与跳转 / 419 frames · frame stepping and seeking | 4K 回放 + 独立三维检查视角 / 4K replay + separate inspection view |
+
+## 工程内容 / What is inside
 
 这是独立制作的三维外观模型、坡道、相机与关键帧运动研究，非 Tesla 官方项目、CAD 或完整物理复原。序列为 **419 帧、24000/1001 fps、17.475792 秒**；模型和场景均为三维资产，没有用参考视频平面代替车辆运动。
 
@@ -25,11 +45,18 @@ $env:UE_ROOT = 'D:\Epic Games\UE_5.4'
 
 ## 原创演示 / Rendered previews
 
+- [23-second showcase / 23秒展示剪辑](Renders/Roadster_V2_Showcase.mp4)
 - [4K replay / 4K自制回放](Renders/Reference_Replay_4K.mp4)
 - [1080p replay / 1080p自制回放](Renders/Reference_Replay_1080.mp4)
 - [3D inspection / 三维检查镜头](Renders/Inspection_3D.mp4)
 
 这些视频由本工程渲染，不含官方原片或叠加对比。 / These videos are rendered from this project and contain no official footage or reference overlays.
+
+[![Independent 3D inspection view of the authored vehicle in flight](docs/media/inspection.jpg)](Renders/Inspection_3D.mp4)
+
+展示剪辑在完整回放后接入同一动作的 6 秒检查视角，并标注 **3D INSPECTION REPLAY**；不代表第二次动作。封面、动图和剪辑均取自已验证的原创渲染，仅调整展示方式，不是新的精度或物理验收。检查镜头原生 720p，在展示剪辑中放大至 1080p。[媒体来源与处理记录](docs/media/provenance.json)。
+
+The showcase appends a labelled 6-second inspection replay of the same action. Stills, GIF and showcase derive from the existing authored renders; this presentation update is not a new fidelity or physics validation. The inspection segment is upscaled from native 720p. [Media provenance](docs/media/provenance.json).
 
 ## 已测结果与边界 / Measured results and limits
 

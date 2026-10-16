@@ -34,6 +34,7 @@ Renders/*
 !Renders/Reference_Replay_4K.mp4
 !Renders/Reference_Replay_1080.mp4
 !Renders/Inspection_3D.mp4
+!Renders/Roadster_V2_Showcase.mp4
 Data/trajectory_initial.csv
 Data/physics_timeseries_*.csv
 Data/physics_mass_sensitivity.csv
