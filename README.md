@@ -3,12 +3,21 @@
 **坡道、翻转、落地——在 Unreal Engine 里逐帧拆开看。**  
 An editable 3D study of the Roadster ramp demonstration in **Unreal Engine 5.4.3**.
 
-[![Roadster V2 — actual Unreal render of the authored vehicle at the ramp](docs/media/cover.jpg)](Renders/Roadster_V2_Showcase.mp4)
+[![Roadster V2 — actual Unreal render of the authored vehicle at the ramp](docs/media/cover.jpg)](#watch-the-showcase)
 
-**[▶ 23 秒演示 / Watch the showcase](Renders/Roadster_V2_Showcase.mp4)** · [完整 4K 回放 / Full 4K replay](Renders/Reference_Replay_4K.mp4) · [打开工程 / Get started](#打开--get-started)
+**[▶ 23 秒演示 / Watch the showcase](#watch-the-showcase)** · [下载 MP4 / Download](https://github.com/SeekingY/roadster_v2/raw/refs/heads/main/Renders/Roadster_V2_Showcase.mp4) · [完整 4K 回放 / Full 4K replay](Renders/Reference_Replay_4K.mp4) · [打开工程 / Get started](#打开--get-started)
 
 > **复现草稿 / Reconstruction draft.** 关键帧回放，车辆动力学未验证；6 个稀疏轮廓样本平均 IoU **0.693**，未达 **0.90**。非官方 CAD。  
 > Keyframed motion; vehicle physics unvalidated. Six-sample silhouette IoU **0.693 / 0.90 target**. Unofficial, independently authored geometry.
+
+## Watch the showcase
+
+**23 秒演示：完整回放 + 同一动作的三维检查视角。** 点击下方播放。  
+Full replay followed by an inspection replay of the same action. Press play below.
+
+https://github.com/user-attachments/assets/6c5477ee-663a-461b-89f1-c71819825fae
+
+[视频展示与讨论 / Showcase and discussion](https://github.com/SeekingY/roadster_v2/issues/1)
 
 ## 先看它动起来 / Motion preview
 

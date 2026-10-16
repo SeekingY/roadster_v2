@@ -63,7 +63,7 @@
             0.0,
             917.032470703125
           ],
-          "csv_error_cm": 2.9784175814763665e-05
+          "csv_error_cm": 2.9784175814763665E-05
         },
         {
           "frame": 240,
@@ -72,7 +72,7 @@
             0.0,
             1906.358154296875
           ],
-          "csv_error_cm": 2.2221932406280477e-05
+          "csv_error_cm": 2.2221932406280477E-05
         }
       ],
       "passed": true
@@ -97,7 +97,7 @@
   },
   "file_manifest_scope": "Explicit publish allowlist below. Excludes this manifest itself and .git; generated ignored files on disk are not release contents.",
   "file_count_excluding_this_manifest": 117,
-  "total_bytes_excluding_this_manifest": 37267833,
+  "total_bytes_excluding_this_manifest": 37268312.0,
   "files": [
     {
       "path": ".gitattributes",
@@ -638,8 +638,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7004,
-      "sha256": "5457a815149576178b26d368c48417b7005d88c27288be9b1c1f3bc69d9ded61",
+      "bytes": 7483,
+      "sha256": "9b8f99808bc5a2d8e2edf428705a35e4f5dc247ad6c0e83767381c5f76952cc8",
       "copy_status": "publication_support_file"
     },
     {
@@ -905,5 +905,11 @@
       "copy_status": "publication_support_file"
     }
   ],
-  "presentation_media_provenance": "docs/media/provenance.json"
+  "presentation_media_provenance": "docs/media/provenance.json",
+  "hosted_showcase": {
+    "issue": "https://github.com/SeekingY/roadster_v2/issues/1",
+    "video": "https://github.com/user-attachments/assets/6c5477ee-663a-461b-89f1-c71819825fae",
+    "source": "Renders/Roadster_V2_Showcase.mp4",
+    "source_sha256": "bbe2abb77f8f9842473ec6ff9b23f20601494cc26227b12d80e79e265eb17bdb"
+  }
 }
